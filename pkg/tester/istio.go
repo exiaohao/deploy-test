@@ -74,14 +74,21 @@ func (it *IstioTest) deploySimpleProject() error {
 	}
 	defer base.RemoveNamespace(it.kubeClient, it.testNamespace, it.showDetail)
 
+	// TODO fix get path
 	if err := base.CreateDeployment(it.kubeClient, it.testNamespace,"./test-data/simple-project/deployment.yaml", it.showDetail); err != nil {
 		return err
 	}
-	if err := base.CreateService(it.kubeClient, it.testNamespace, "./test-data/simple-project/service.yaml", it.showDetail); err != nil {
+	// TODO fix get path
+	if service, err := base.CreateService(it.kubeClient, it.testNamespace, "./test-data/simple-project/service.yaml", it.showDetail); err != nil {
 		return err
+	} else {
+		if err := base.CheckServiceWorks(it.kubeClient, service, "/status/200"); err != nil {
+			return nil
+		}
+		if it.showDetail {
+			//glog.Info()
+		}
 	}
-
-
 	return nil
 }
 

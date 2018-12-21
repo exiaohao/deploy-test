@@ -113,6 +113,15 @@ func CreateNamespaceFailed(namespaceName string, error error) *BaseInfo {
 	}
 }
 
+// BadServiceStatus
+func BadServiceStatus(serviceName string, error error) *BaseInfo {
+	return &BaseInfo{
+		Code: 5031,
+		Level: Error,
+		Message: fmt.Sprintf("Service %s is not work: %s", serviceName, error),
+	}
+}
+
 // CreateFailed
 func CreateFailed(action string, error error) *BaseInfo {
 	return &BaseInfo{
