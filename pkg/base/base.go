@@ -5,7 +5,6 @@ import (
 	"github.com/golang/glog"
 	"net/http"
 
-	//"github.com/istio/istio/pkg/test/framework/environments/local/service"
 	"io/ioutil"
 	api_v1 "k8s.io/api/core/v1"
 	extensions_v1beta1 "k8s.io/api/extensions/v1beta1"
@@ -110,12 +109,9 @@ func CheckServiceWorks(kubeClient *kubernetes.Clientset, serviceObj *api_v1.Serv
 	if err != nil {
 		return BadServiceStatus(serviceObj.Name, fmt.Errorf("Get service %s failed", serviceObj.Name))
 	}
-	//serviceBytes, _ := json.Marshal(service)
-
 	if path == "" {
 		path = "/"
 	}
-
 	requestURL := fmt.Sprintf("http://%s:%s%s", service.Spec.ClusterIP, service.Spec.Ports[0].Port, path)
 	resp, err := http.Get(requestURL)
 	if err != nil {
