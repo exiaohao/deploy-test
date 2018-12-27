@@ -112,7 +112,7 @@ func CheckServiceWorks(kubeClient *kubernetes.Clientset, serviceObj *api_v1.Serv
 	if path == "" {
 		path = "/"
 	}
-	requestURL := fmt.Sprintf("http://%s:%s%s", service.Spec.ClusterIP, service.Spec.Ports[0].Port, path)
+	requestURL := fmt.Sprintf("http://%s:%d%s", service.Spec.ClusterIP, service.Spec.Ports[0].Port, path)
 	resp, err := http.Get(requestURL)
 	if err != nil {
 		return BadServiceStatus(serviceObj.Name, err)

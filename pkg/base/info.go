@@ -24,11 +24,11 @@ func (e *BaseInfo) Error() string {
 }
 
 // PodCheckPassed
-func PodCheckPassed() *BaseInfo {
+func CheckPassed(testName string) *BaseInfo {
 	return &BaseInfo{
 		Code: 2000,
 		Level: Succeed,
-		Message: "Pod status check passed!",
+		Message: fmt.Sprintf("%s check passed!", testName),
 	}
 }
 

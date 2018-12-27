@@ -13,6 +13,8 @@ type IstioTest struct {
 	kubeClient    *kubernetes.Clientset
 	namespace     string
 	showDetail    bool
+	runFullTest	  bool
+	displayErrFunc func(args ...interface{})
 	testNamespace string
 }
 
@@ -24,17 +26,24 @@ func (it *IstioTest) Initialize(opts InitOptions) {
 		glog.Fatalf("initialize kubeclient using %s: %v", opts.KubeConfig, err)
 	}
 	it.showDetail = true
+	it.runFullTest = true
 	it.namespace = opts.Namespace
 	it.testNamespace = "test-namespace"
+
+	if it.runFullTest {
+		it.displayErrFunc = glog.Info
+	} else {
+		it.displayErrFunc = glog.Fatal
+	}
 }
 
 // Run a istio test
 func (it *IstioTest) Run() {
 	if podsAvailableErr := it.checkPodsAvailable(); podsAvailableErr != nil{
-		glog.Fatal(podsAvailableErr)
+		it.displayErrFunc(podsAvailableErr)
 	}
 	if projectErr := it.deploySimpleProject(); projectErr != nil {
-		glog.Fatal(projectErr)
+		it.displayErrFunc(projectErr)
 	}
 }
 
@@ -63,33 +72,37 @@ func (it *IstioTest) checkPodsAvailable() error {
 			return base.BadPodStatus(pod.Name, pod.Status)
 		}
 	}
-	glog.Info(base.PodCheckPassed())
+	glog.Info(base.CheckPassed("Pod check"))
 	return nil
 }
 
 func (it *IstioTest) deploySimpleProject() error {
-	err := base.CreateNamespace(it.kubeClient, it.testNamespace, it.showDetail)
-	if err != nil {
+	if err := base.CreateNamespace(it.kubeClient, it.testNamespace, it.showDetail); err != nil{
 		return base.CreateNamespaceFailed(it.testNamespace, err)
 	}
 	defer base.RemoveNamespace(it.kubeClient, it.testNamespace, it.showDetail)
 
 	// TODO fix get path
-	if err := base.CreateDeployment(it.kubeClient, it.testNamespace,"./test-data/simple-project/deployment.yaml", it.showDetail); err != nil {
+	if err := base.CreateDeployment(it.kubeClient, it.testNamespace,
+		"./test-data/simple-project/deployment.yaml", it.showDetail); err != nil {
 		return err
 	}
 	// TODO fix get path
-	if service, err := base.CreateService(it.kubeClient, it.testNamespace, "./test-data/simple-project/service.yaml", it.showDetail); err != nil {
+	if service, err := base.CreateService(it.kubeClient, it.testNamespace,
+		"./test-data/simple-project/service.yaml", it.showDetail); err != nil {
 		return err
-	} else {
-		if err := base.CheckServiceWorks(it.kubeClient, service, "/status/200"); err != nil {
-			return nil
-		}
-		if it.showDetail {
-			//glog.Info()
-		}
 	}
+	if err := base.CheckServiceWorks(it.kubeClient, service, "/status/200"); err != nil {
+		return err
+	}
+	if it.showDetail {
+		glog.Info()
+	}
+	glog.Info(base.CheckPassed("Deploy simple project"))
 	return nil
 }
 
+func (it *IstioTest) deployBlueGreenProject() error {
+
+}
 
