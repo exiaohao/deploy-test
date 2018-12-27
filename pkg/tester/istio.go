@@ -91,9 +91,10 @@ func (it *IstioTest) deploySimpleProject() error {
 	if service, err := base.CreateService(it.kubeClient, it.testNamespace,
 		"./test-data/simple-project/service.yaml", it.showDetail); err != nil {
 		return err
-	}
-	if err := base.CheckServiceWorks(it.kubeClient, service, "/status/200"); err != nil {
-		return err
+	} else {
+		if err := base.CheckServiceWorks(it.kubeClient, service, "/status/200"); err != nil {
+			return err
+		}
 	}
 	if it.showDetail {
 		glog.Info()
@@ -101,8 +102,3 @@ func (it *IstioTest) deploySimpleProject() error {
 	glog.Info(base.CheckPassed("Deploy simple project"))
 	return nil
 }
-
-func (it *IstioTest) deployBlueGreenProject() error {
-
-}
-
