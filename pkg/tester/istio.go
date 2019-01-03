@@ -10,12 +10,12 @@ import (
 )
 
 type IstioTest struct {
-	kubeClient    *kubernetes.Clientset
-	namespace     string
-	showDetail    bool
-	runFullTest	  bool
+	kubeClient     *kubernetes.Clientset
+	namespace      string
+	showDetail     bool
+	runFullTest    bool
 	displayErrFunc func(args ...interface{})
-	testNamespace string
+	testNamespace  string
 }
 
 // Initialize istioTest
@@ -39,7 +39,7 @@ func (it *IstioTest) Initialize(opts InitOptions) {
 
 // Run a istio test
 func (it *IstioTest) Run() {
-	if podsAvailableErr := it.checkPodsAvailable(); podsAvailableErr != nil{
+	if podsAvailableErr := it.checkPodsAvailable(); podsAvailableErr != nil {
 		it.displayErrFunc(podsAvailableErr)
 	}
 	if projectErr := it.deploySimpleProject(); projectErr != nil {
@@ -61,7 +61,7 @@ func (it *IstioTest) checkPodsAvailable() error {
 			}
 			continue
 		case "Succeeded":
-			if strings.Contains(pod.Name, "-post-install") || strings.Contains(pod.Name, "-cleanup-") {
+			if strings.Contains(pod.Name, "-post-install") || strings.Contains(pod.Name, "-cleanup-") || strings.Contains(pod.Name, "deploy-test") {
 				if it.showDetail {
 					glog.Info(base.PodStatusOK(pod.Name, pod.Status.Phase))
 				}
@@ -69,6 +69,12 @@ func (it *IstioTest) checkPodsAvailable() error {
 			}
 			return base.BadPodStatus(pod.Name, pod.Status)
 		default:
+			if strings.Contains(pod.Name, "deploy-test") {
+				if it.showDetail {
+					glog.Info(base.PodStatusWarn(pod.Name, pod.Status.Phase))
+				}
+				continue
+			}
 			return base.BadPodStatus(pod.Name, pod.Status)
 		}
 	}
@@ -77,7 +83,7 @@ func (it *IstioTest) checkPodsAvailable() error {
 }
 
 func (it *IstioTest) deploySimpleProject() error {
-	if err := base.CreateNamespace(it.kubeClient, it.testNamespace, it.showDetail); err != nil{
+	if err := base.CreateNamespace(it.kubeClient, it.testNamespace, it.showDetail); err != nil {
 		return base.CreateNamespaceFailed(it.testNamespace, err)
 	}
 	defer base.RemoveNamespace(it.kubeClient, it.testNamespace, it.showDetail)

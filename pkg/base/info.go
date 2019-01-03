@@ -2,20 +2,21 @@ package base
 
 import (
 	"fmt"
+
 	core_v1 "k8s.io/api/core/v1"
 )
 
 const (
-	Info = "ℹ️ "
+	Info     = "ℹ️ "
 	StatusOK = "🆗"
-	Succeed = "✅"
-	Warn = "⚠️"
-	Error = "🔴"
+	Succeed  = "✅"
+	Warn     = "⚠️"
+	Error    = "🔴"
 )
 
 type BaseInfo struct {
-	Code int32
-	Level string
+	Code    int32
+	Level   string
 	Message string
 }
 
@@ -26,8 +27,8 @@ func (e *BaseInfo) Error() string {
 // PodCheckPassed
 func CheckPassed(testName string) *BaseInfo {
 	return &BaseInfo{
-		Code: 2000,
-		Level: Succeed,
+		Code:    2000,
+		Level:   Succeed,
 		Message: fmt.Sprintf("%s check passed!", testName),
 	}
 }
@@ -35,17 +36,26 @@ func CheckPassed(testName string) *BaseInfo {
 // PodStatusOK
 func PodStatusOK(podName string, podPhase core_v1.PodPhase) *BaseInfo {
 	return &BaseInfo{
-		Code:2001,
-		Level:StatusOK,
-		Message: fmt.Sprintf("Pod %s status %s", podName ,podPhase),
+		Code:    2001,
+		Level:   StatusOK,
+		Message: fmt.Sprintf("Pod %s status %s", podName, podPhase),
+	}
+}
+
+// PodStatusWarn
+func PodStatusWarn(podName string, podPhase core_v1.PodPhase) *BaseInfo {
+	return &BaseInfo{
+		Code:    2002,
+		Level:   Warn,
+		Message: fmt.Sprintf("Pod %s status %s", podName, podPhase),
 	}
 }
 
 // NamespaceStatusOK
 func NamespaceStatusOK() *BaseInfo {
 	return &BaseInfo{
-		Code: 2011,
-		Level: StatusOK,
+		Code:    2011,
+		Level:   StatusOK,
 		Message: "Namespace status check passed!",
 	}
 }
@@ -53,8 +63,8 @@ func NamespaceStatusOK() *BaseInfo {
 // CreateNamespaceSucceed
 func CreateNamespaceSucceed(name string) *BaseInfo {
 	return &BaseInfo{
-		Code: 2012,
-		Level: Succeed,
+		Code:    2012,
+		Level:   Succeed,
 		Message: fmt.Sprintf("Create namespace %s succeed", name),
 	}
 }
@@ -62,8 +72,8 @@ func CreateNamespaceSucceed(name string) *BaseInfo {
 // DeploymentStatusOK
 func DeploymentStatusOK(deploymentName string, deploymentStatus string) *BaseInfo {
 	return &BaseInfo{
-		Code: 2021,
-		Level:StatusOK,
+		Code:    2021,
+		Level:   StatusOK,
 		Message: fmt.Sprintf("Deployment % status %s", deploymentName, deploymentStatus),
 	}
 }
@@ -71,8 +81,8 @@ func DeploymentStatusOK(deploymentName string, deploymentStatus string) *BaseInf
 // CreateDeploymentSucceed
 func CreateDeploymentSucceed(deploymentName string) *BaseInfo {
 	return &BaseInfo{
-		Code: 2022,
-		Level: Succeed,
+		Code:    2022,
+		Level:   Succeed,
 		Message: fmt.Sprintf("Create deployment %s succeed", deploymentName),
 	}
 }
@@ -80,8 +90,8 @@ func CreateDeploymentSucceed(deploymentName string) *BaseInfo {
 // CreateServiceSucceed
 func CreateServiceSucceed(serviceName string) *BaseInfo {
 	return &BaseInfo{
-		Code: 2032,
-		Level: Succeed,
+		Code:    2032,
+		Level:   Succeed,
 		Message: fmt.Sprintf("Create service %s succeed", serviceName),
 	}
 }
@@ -89,8 +99,8 @@ func CreateServiceSucceed(serviceName string) *BaseInfo {
 // DestoryNamespace
 func DestoryNamespace(namespace string) *BaseInfo {
 	return &BaseInfo{
-		Code: 4011,
-		Level: Info,
+		Code:    4011,
+		Level:   Info,
 		Message: fmt.Sprintf("Namesapce %s destroyed", namespace),
 	}
 }
@@ -98,8 +108,8 @@ func DestoryNamespace(namespace string) *BaseInfo {
 // BadPodStatus
 func BadPodStatus(podName string, podStatus core_v1.PodStatus) *BaseInfo {
 	return &BaseInfo{
-		Code: 5001,
-		Level: Error,
+		Code:    5001,
+		Level:   Error,
 		Message: fmt.Sprintf("Pod %s in bad status: %s", podName, podStatus.Phase),
 	}
 }
@@ -107,8 +117,8 @@ func BadPodStatus(podName string, podStatus core_v1.PodStatus) *BaseInfo {
 // CreateNamespaceFailed
 func CreateNamespaceFailed(namespaceName string, error error) *BaseInfo {
 	return &BaseInfo{
-		Code: 5011,
-		Level: Error,
+		Code:    5011,
+		Level:   Error,
 		Message: fmt.Sprintf("Create test namespace %s failed: %s", namespaceName, error),
 	}
 }
@@ -116,8 +126,8 @@ func CreateNamespaceFailed(namespaceName string, error error) *BaseInfo {
 // BadServiceStatus
 func BadServiceStatus(serviceName string, error error) *BaseInfo {
 	return &BaseInfo{
-		Code: 5031,
-		Level: Error,
+		Code:    5031,
+		Level:   Error,
 		Message: fmt.Sprintf("Service %s is not work: %s", serviceName, error),
 	}
 }
@@ -125,8 +135,8 @@ func BadServiceStatus(serviceName string, error error) *BaseInfo {
 // CreateFailed
 func CreateFailed(action string, error error) *BaseInfo {
 	return &BaseInfo{
-		Code: 5091,
-		Level: Error,
+		Code:    5091,
+		Level:   Error,
 		Message: fmt.Sprintf("%s failed: %s", action, error),
 	}
 }
