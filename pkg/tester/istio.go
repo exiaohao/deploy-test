@@ -1,6 +1,7 @@
 package tester
 
 import (
+	"os"
 	"strings"
 
 	"github.com/exiaohao/deploy-test/pkg/base"
@@ -25,15 +26,27 @@ func (it *IstioTest) Initialize(opts InitOptions) {
 	if it.kubeClient, err = base.InitializeKubeClient(opts.KubeConfig); err != nil {
 		glog.Fatalf("initialize kubeclient using %s: %v", opts.KubeConfig, err)
 	}
-	it.showDetail = true
-	it.runFullTest = true
-	it.namespace = opts.Namespace
-	it.testNamespace = "test-namespace"
 
-	if it.runFullTest {
+	it.namespace = opts.Namespace
+
+	if os.Getenv("SHOW_DETAIL") == "TRUE" {
+		it.showDetail = true
+	} else {
+		it.showDetail = false
+	}
+
+	if os.Getenv("IGNORE_FAILED") == "TRUE" {
+		it.runFullTest = true
 		it.displayErrFunc = glog.Info
 	} else {
+		it.runFullTest = false
 		it.displayErrFunc = glog.Fatal
+	}
+
+	if os.Getenv("TEST_NAMESPACE") == "" {
+		it.testNamespace = "test-namespace"
+	} else {
+		it.testNamespace = os.Getenv("TEST_NAMESPACE")
 	}
 }
 
@@ -86,7 +99,9 @@ func (it *IstioTest) deploySimpleProject() error {
 	if err := base.CreateNamespace(it.kubeClient, it.testNamespace, it.showDetail); err != nil {
 		return base.CreateNamespaceFailed(it.testNamespace, err)
 	}
-	defer base.RemoveNamespace(it.kubeClient, it.testNamespace, it.showDetail)
+	if !it.runFullTest {
+		defer base.RemoveNamespace(it.kubeClient, it.testNamespace, it.showDetail)
+	}
 
 	// TODO fix get path
 	if err := base.CreateDeployment(it.kubeClient, it.testNamespace,
