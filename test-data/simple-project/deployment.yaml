@@ -12,8 +12,15 @@ spec:
         version: v1
     spec:
       containers:
-      - image: docker.io/citizenstig/httpbin
+      - image: reg.qiniu.com/hao/http-test:latest
         imagePullPolicy: IfNotPresent
-        name: httpbin
+        name: http-test
+        env:
+        - name: ERR_RATE
+          value: "10"
+        - name: GIN_MODE
+          value: "release"
+        - name: VERSION
+          value: "v1"
         ports:
-        - containerPort: 8000
+        - containerPort: 3000

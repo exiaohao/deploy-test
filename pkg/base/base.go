@@ -2,10 +2,13 @@ package base
 
 import (
 	"fmt"
-	"github.com/golang/glog"
 	"net/http"
+	"time"
+
+	"github.com/golang/glog"
 
 	"io/ioutil"
+
 	api_v1 "k8s.io/api/core/v1"
 	extensions_v1beta1 "k8s.io/api/extensions/v1beta1"
 	meta_v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
@@ -104,7 +107,10 @@ func CreateService(kubeClient *kubernetes.Clientset, namespace string, fileFath 
 }
 
 // CheckServiceWorks
-func CheckServiceWorks(kubeClient *kubernetes.Clientset, serviceObj *api_v1.Service, path string) error {
+// Caution: maybe services was created but endpoint is not ready
+// please add some timeout & retry times to avoid timeout when endpoint is creating
+func CheckServiceWorks(kubeClient *kubernetes.Clientset, serviceObj *api_v1.Service, path string,
+	initialDelaySeconds int, retryDelaySeconds int, retryTimes int) error {
 	service, err := kubeClient.CoreV1().Services(serviceObj.Namespace).Get(serviceObj.Name, meta_v1.GetOptions{})
 	if err != nil {
 		return BadServiceStatus(serviceObj.Name, fmt.Errorf("Get service %s failed", serviceObj.Name))
@@ -113,15 +119,28 @@ func CheckServiceWorks(kubeClient *kubernetes.Clientset, serviceObj *api_v1.Serv
 		path = "/"
 	}
 	requestURL := fmt.Sprintf("http://%s:%d%s", service.Spec.ClusterIP, service.Spec.Ports[0].Port, path)
-	resp, err := http.Get(requestURL)
-	if err != nil {
-		return BadServiceStatus(serviceObj.Name, err)
+
+	var httpClient = &http.Client{
+		Timeout: 30 * time.Second,
 	}
-	glog.Info(resp.StatusCode)
-	if resp.StatusCode != http.StatusOK {
-		return BadServiceStatus(serviceObj.Name, fmt.Errorf("Bad statusCode %d from %s", resp.StatusCode, requestURL))
-	} else {
-		glog.Infof("Request %s, returns statusCode: %d", requestURL, resp.StatusCode)
+
+	time.Sleep(time.Duration(initialDelaySeconds) * time.Second)
+	for retryTimes > 0 {
+		resp, err := httpClient.Get(requestURL)
+		if err != nil {
+			if retryTimes > 0 {
+				time.Sleep(time.Duration(retryDelaySeconds) * time.Second)
+				retryTimes--
+				retryDelaySeconds *= 2
+				continue
+			}
+			return BadServiceStatus(serviceObj.Name, err)
+		} else {
+			if resp.StatusCode != http.StatusOK {
+				return BadServiceStatus(serviceObj.Name, fmt.Errorf("Bad statusCode %d from %s", resp.StatusCode, requestURL))
+			}
+			return nil
+		}
 	}
-	return nil
+	return BadServiceStatus(serviceObj.Name, fmt.Errorf("Max retries exceeded, service unavailable."))
 }

@@ -3,6 +3,7 @@ package tester
 import (
 	"os"
 	"strings"
+	"time"
 
 	"github.com/exiaohao/deploy-test/pkg/base"
 	"github.com/golang/glog"
@@ -57,6 +58,7 @@ func (it *IstioTest) Run() {
 	}
 	if projectErr := it.deploySimpleProject(); projectErr != nil {
 		it.displayErrFunc(projectErr)
+		time.Sleep(60 * time.Minute)
 	}
 }
 
@@ -99,9 +101,7 @@ func (it *IstioTest) deploySimpleProject() error {
 	if err := base.CreateNamespace(it.kubeClient, it.testNamespace, it.showDetail); err != nil {
 		return base.CreateNamespaceFailed(it.testNamespace, err)
 	}
-	if !it.runFullTest {
-		defer base.RemoveNamespace(it.kubeClient, it.testNamespace, it.showDetail)
-	}
+	defer base.RemoveNamespace(it.kubeClient, it.testNamespace, it.showDetail)
 
 	// TODO fix get path
 	if err := base.CreateDeployment(it.kubeClient, it.testNamespace,
@@ -113,12 +113,9 @@ func (it *IstioTest) deploySimpleProject() error {
 		"./test-data/simple-project/service.yaml", it.showDetail); err != nil {
 		return err
 	} else {
-		if err := base.CheckServiceWorks(it.kubeClient, service, "/status/200"); err != nil {
+		if err := base.CheckServiceWorks(it.kubeClient, service, "/status/200", 1, 1, 3); err != nil {
 			return err
 		}
-	}
-	if it.showDetail {
-		glog.Info()
 	}
 	glog.Info(base.CheckPassed("Deploy simple project"))
 	return nil

@@ -1,4 +1,4 @@
-FROM alpine:3.8
+FROM byrnedo/alpine-curl
 
 ADD ./tester /usr/local/tester
 ADD ./test-data/ /test-data
