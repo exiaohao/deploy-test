@@ -3,7 +3,6 @@ package tester
 import (
 	"os"
 	"strings"
-	"time"
 
 	"github.com/exiaohao/deploy-test/pkg/base"
 	"github.com/golang/glog"
@@ -58,7 +57,6 @@ func (it *IstioTest) Run() {
 	}
 	if projectErr := it.deploySimpleProject(); projectErr != nil {
 		it.displayErrFunc(projectErr)
-		time.Sleep(60 * time.Minute)
 	}
 }
 
