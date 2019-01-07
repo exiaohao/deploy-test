@@ -17,6 +17,8 @@ import (
 	"k8s.io/client-go/tools/clientcmd"
 )
 
+var IsAllPodsAvailable bool
+
 func InitializeKubeClient(kubeconfigPath string) (*kubernetes.Clientset, error) {
 	config, err := clientcmd.BuildConfigFromFlags("", kubeconfigPath)
 	if err != nil {
@@ -143,4 +145,40 @@ func CheckServiceWorks(kubeClient *kubernetes.Clientset, serviceObj *api_v1.Serv
 		}
 	}
 	return BadServiceStatus(serviceObj.Name, fmt.Errorf("Max retries exceeded, service unavailable."))
+}
+
+// WaitNamespacePodsReady
+func WaitNamespacePodsReady(kubeClient *kubernetes.Clientset, namespace string, retryTimes int, WaitDelayMinutes int) error {
+	pods, err := kubeClient.CoreV1().Pods(namespace).List(meta_v1.ListOptions{})
+	if err != nil {
+		return FailedGetPods(err)
+	}
+
+	for retryTimes > 0 {
+		IsAllPodsAvailable = true
+		for _, pod := range pods.Items {
+			switch pod.Status.Phase {
+			case "Running":
+				continue
+			case "Pending":
+			case "PodInitializing":
+				if retryTimes == 1 {
+					return PodNotReady(pod)
+				}
+				IsAllPodsAvailable = false
+				break
+			default:
+				return PodStatusWarn(pod)
+			}
+		}
+		if !IsAllPodsAvailable {
+			retryTimes--
+			time.Sleep(time.Duration(WaitDelayMinutes) * time.Minute)
+			WaitDelayMinutes *= 2
+		} else {
+			return nil
+		}
+	}
+	// maybe it's a bug
+	return nil
 }

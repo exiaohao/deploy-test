@@ -1,6 +1,7 @@
 package tester
 
 import (
+	"fmt"
 	"os"
 	"strings"
 
@@ -52,11 +53,14 @@ func (it *IstioTest) Initialize(opts InitOptions) {
 
 // Run a istio test
 func (it *IstioTest) Run() {
-	if podsAvailableErr := it.checkPodsAvailable(); podsAvailableErr != nil {
-		it.displayErrFunc(podsAvailableErr)
-	}
-	if projectErr := it.deploySimpleProject(); projectErr != nil {
-		it.displayErrFunc(projectErr)
+	// if podsAvailableErr := it.checkPodsAvailable(); podsAvailableErr != nil {
+	// 	it.displayErrFunc(podsAvailableErr)
+	// }
+	// if projectErr := it.deploySimpleProject(); projectErr != nil {
+	// 	it.displayErrFunc(projectErr)
+	// }
+	if bookinfoErr := it.bookinfo(); bookinfoErr != nil {
+		it.displayErrFunc(bookinfoErr)
 	}
 }
 
@@ -64,6 +68,7 @@ func (it *IstioTest) Run() {
 func (it *IstioTest) checkPodsAvailable() error {
 	pods, err := it.kubeClient.CoreV1().Pods(it.namespace).List(meta_v1.ListOptions{})
 	if err != nil {
+		// TODO RETURN FAILED
 		glog.Fatalf("Get pods failed: %s", err)
 	}
 	for _, pod := range pods.Items {
@@ -84,7 +89,7 @@ func (it *IstioTest) checkPodsAvailable() error {
 		default:
 			if strings.Contains(pod.Name, "deploy-test") {
 				if it.showDetail {
-					glog.Info(base.PodStatusWarn(pod.Name, pod.Status.Phase))
+					glog.Info(base.PodStatusWarn(pod))
 				}
 				continue
 			}
@@ -116,5 +121,48 @@ func (it *IstioTest) deploySimpleProject() error {
 		}
 	}
 	glog.Info(base.CheckPassed("Deploy simple project"))
+	return nil
+}
+
+// bookinfo test
+func (it *IstioTest) bookinfo() error {
+	if err := base.CreateNamespace(it.kubeClient, it.testNamespace, it.showDetail); err != nil {
+		return base.CreateNamespaceFailed(it.testNamespace, err)
+	}
+	defer base.RemoveNamespace(it.kubeClient, it.testNamespace, it.showDetail)
+
+	deployments := []string{
+		"deployment-detail-v1.yaml",
+		"deployment-productpage-v1.yaml",
+		"deployment-rating-v1.yaml",
+		"deployment-reviews-v1.yaml",
+		"deployment-reviews-v2.yaml",
+		"deployment-reviews-v3.yaml",
+	}
+	services := []string{
+		"service-detail.yaml",
+		"service-productpage.yaml",
+		"service-rating.yaml",
+		"service-reviews.yaml",
+	}
+
+	for _, deployment := range deployments {
+		file := fmt.Sprintf("./test-data/bookinfo/%s", deployment)
+		if err := base.CreateDeployment(it.kubeClient, it.testNamespace, file, it.showDetail); err != nil {
+			return err
+		}
+	}
+
+	for _, service := range services {
+		file := fmt.Sprintf("./test-data/bookinfo/%s", service)
+		if _, err := base.CreateService(it.kubeClient, it.testNamespace, file, it.showDetail); err != nil {
+			return err
+		}
+	}
+
+	if err := base.WaitNamespacePodsReady(it.kubeClient, it.testNamespace, 5, 2); err != nil {
+		return err
+	}
+
 	return nil
 }

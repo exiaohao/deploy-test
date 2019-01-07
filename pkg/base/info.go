@@ -43,11 +43,11 @@ func PodStatusOK(podName string, podPhase core_v1.PodPhase) *BaseInfo {
 }
 
 // PodStatusWarn
-func PodStatusWarn(podName string, podPhase core_v1.PodPhase) *BaseInfo {
+func PodStatusWarn(pod core_v1.Pod) *BaseInfo {
 	return &BaseInfo{
 		Code:    2002,
 		Level:   Warn,
-		Message: fmt.Sprintf("Pod %s status %s", podName, podPhase),
+		Message: fmt.Sprintf("Pod %s status %s", pod.Name, pod.Status.Phase),
 	}
 }
 
@@ -96,6 +96,24 @@ func CreateServiceSucceed(serviceName string) *BaseInfo {
 	}
 }
 
+// PodNotReady
+func PodNotReady(pod core_v1.Pod) *BaseInfo {
+	return &BaseInfo{
+		Code:    3031,
+		Level:   Info,
+		Message: fmt.Sprintf("Pod %s not ready, current status: %s", pod.Name, pod.Status.Phase),
+	}
+}
+
+// TestInfo
+func TestInfo(msg string) *BaseInfo {
+	return &BaseInfo{
+		Code:    3999,
+		Level:   Info,
+		Message: fmt.Sprintf("%s", msg),
+	}
+}
+
 // DestoryNamespace
 func DestoryNamespace(namespace string) *BaseInfo {
 	return &BaseInfo{
@@ -111,6 +129,15 @@ func BadPodStatus(podName string, podStatus core_v1.PodStatus) *BaseInfo {
 		Code:    5001,
 		Level:   Error,
 		Message: fmt.Sprintf("Pod %s in bad status: %s", podName, podStatus.Phase),
+	}
+}
+
+// FailedGetPods
+func FailedGetPods(err error) *BaseInfo {
+	return &BaseInfo{
+		Code:    5012,
+		Level:   Error,
+		Message: fmt.Sprintf("Failed get pods: %s", err),
 	}
 }
 
