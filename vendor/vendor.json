@@ -3,10 +3,290 @@
 	"ignore": "test",
 	"package": [
 		{
+			"checksumSHA1": "j/0+O4eJ99Jrb9un/bwi5npLyOM=",
+			"origin": "istio.io/istio/vendor/cloud.google.com/go/compute/metadata",
+			"path": "cloud.google.com/go/compute/metadata",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "bONxUVMvvP+fbRenJ+VrLbLzL3c=",
+			"origin": "istio.io/istio/vendor/code.cloudfoundry.org/copilot",
+			"path": "code.cloudfoundry.org/copilot",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "0ee8R8RbOqIQfbhWOcv8Tx/YkJk=",
+			"origin": "istio.io/istio/vendor/code.cloudfoundry.org/copilot/api",
+			"path": "code.cloudfoundry.org/copilot/api",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "MIrxscEtb69bnPBrv/APi/f09xA=",
+			"origin": "istio.io/istio/vendor/github.com/alecthomas/template",
+			"path": "github.com/alecthomas/template",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "3wt0pTXXeS+S93unwhGoLIyGX/Q=",
+			"origin": "istio.io/istio/vendor/github.com/alecthomas/template/parse",
+			"path": "github.com/alecthomas/template/parse",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "HouOrc//31r7skq3GHJxAGFNh7s=",
+			"origin": "istio.io/istio/vendor/github.com/alecthomas/units",
+			"path": "github.com/alecthomas/units",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "gE7lqhlhEBBeppi1w6TgoW/BasQ=",
+			"origin": "istio.io/istio/vendor/github.com/beorn7/perks/quantile",
+			"path": "github.com/beorn7/perks/quantile",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "dvabztWVQX8f6oMLRyv4dLH+TGY=",
+			"origin": "istio.io/istio/vendor/github.com/davecgh/go-spew/spew",
+			"path": "github.com/davecgh/go-spew/spew",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "uai8TAvo8tfvtGjte3WAZhuV2No=",
+			"origin": "istio.io/istio/vendor/github.com/emicklei/go-restful",
+			"path": "github.com/emicklei/go-restful",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "rmsBHtFpV3osid71XnTZBo/b3bU=",
+			"origin": "istio.io/istio/vendor/github.com/emicklei/go-restful/log",
+			"path": "github.com/emicklei/go-restful/log",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "lvwMGz9/YlidFobLoFDYKxGKnxw=",
+			"origin": "istio.io/istio/vendor/github.com/envoyproxy/go-control-plane/envoy/admin/v2alpha",
+			"path": "github.com/envoyproxy/go-control-plane/envoy/admin/v2alpha",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "xCVKrz/z7veOW/OSPy7ZOsofEt0=",
+			"origin": "istio.io/istio/vendor/github.com/envoyproxy/go-control-plane/envoy/api/v2",
+			"path": "github.com/envoyproxy/go-control-plane/envoy/api/v2",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "byC1kzch3DOaoX3+gYbxA2zQzdo=",
+			"origin": "istio.io/istio/vendor/github.com/envoyproxy/go-control-plane/envoy/api/v2/auth",
+			"path": "github.com/envoyproxy/go-control-plane/envoy/api/v2/auth",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "nEYGsp/SyRc+D2/lqaBZqsYEBdM=",
+			"origin": "istio.io/istio/vendor/github.com/envoyproxy/go-control-plane/envoy/api/v2/cluster",
+			"path": "github.com/envoyproxy/go-control-plane/envoy/api/v2/cluster",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "h6LCFjxwDTwXmo85qCGGheH/ulU=",
+			"origin": "istio.io/istio/vendor/github.com/envoyproxy/go-control-plane/envoy/api/v2/core",
+			"path": "github.com/envoyproxy/go-control-plane/envoy/api/v2/core",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "I9lbhwo3ZVCfyzwh/DXAmriV1os=",
+			"origin": "istio.io/istio/vendor/github.com/envoyproxy/go-control-plane/envoy/api/v2/endpoint",
+			"path": "github.com/envoyproxy/go-control-plane/envoy/api/v2/endpoint",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "meOa2ckDN+m2a0JPeITorzb0Ye0=",
+			"origin": "istio.io/istio/vendor/github.com/envoyproxy/go-control-plane/envoy/api/v2/listener",
+			"path": "github.com/envoyproxy/go-control-plane/envoy/api/v2/listener",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "sMwZP/3Szjdd0+mDiTrQE52seh4=",
+			"origin": "istio.io/istio/vendor/github.com/envoyproxy/go-control-plane/envoy/api/v2/route",
+			"path": "github.com/envoyproxy/go-control-plane/envoy/api/v2/route",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "qgmo6lsdJvBo6zEsZlvB0aw+e7s=",
+			"origin": "istio.io/istio/vendor/github.com/envoyproxy/go-control-plane/envoy/config/accesslog/v2",
+			"path": "github.com/envoyproxy/go-control-plane/envoy/config/accesslog/v2",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "zgsfyRkvblcojU43ogXWGjabw4A=",
+			"origin": "istio.io/istio/vendor/github.com/envoyproxy/go-control-plane/envoy/config/bootstrap/v2",
+			"path": "github.com/envoyproxy/go-control-plane/envoy/config/bootstrap/v2",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "bOqluPr5+WglJaQM5Jp16k0cwyQ=",
+			"origin": "istio.io/istio/vendor/github.com/envoyproxy/go-control-plane/envoy/config/filter/accesslog/v2",
+			"path": "github.com/envoyproxy/go-control-plane/envoy/config/filter/accesslog/v2",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "fqr0RUJd6rEXDbPvIlM5pJu5K0M=",
+			"origin": "istio.io/istio/vendor/github.com/envoyproxy/go-control-plane/envoy/config/filter/fault/v2",
+			"path": "github.com/envoyproxy/go-control-plane/envoy/config/filter/fault/v2",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "js5jFovK8hvz6ViQvI5MGS8xD/g=",
+			"origin": "istio.io/istio/vendor/github.com/envoyproxy/go-control-plane/envoy/config/filter/http/fault/v2",
+			"path": "github.com/envoyproxy/go-control-plane/envoy/config/filter/http/fault/v2",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "HPfyP2Nt4PYboV2lK2HsSvwO2f8=",
+			"origin": "istio.io/istio/vendor/github.com/envoyproxy/go-control-plane/envoy/config/filter/http/health_check/v2",
+			"path": "github.com/envoyproxy/go-control-plane/envoy/config/filter/http/health_check/v2",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "8pGr4Y3ryj0qqTnm5jNWaFREQAg=",
+			"origin": "istio.io/istio/vendor/github.com/envoyproxy/go-control-plane/envoy/config/filter/http/rbac/v2",
+			"path": "github.com/envoyproxy/go-control-plane/envoy/config/filter/http/rbac/v2",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "lk6BeyagibvmOCKbRldclZYAcDY=",
+			"origin": "istio.io/istio/vendor/github.com/envoyproxy/go-control-plane/envoy/config/filter/network/http_connection_manager/v2",
+			"path": "github.com/envoyproxy/go-control-plane/envoy/config/filter/network/http_connection_manager/v2",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "jskGO2Z4gscomz1zIte5lNN0kHU=",
+			"origin": "istio.io/istio/vendor/github.com/envoyproxy/go-control-plane/envoy/config/filter/network/mongo_proxy/v2",
+			"path": "github.com/envoyproxy/go-control-plane/envoy/config/filter/network/mongo_proxy/v2",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "aa13Eehjcnozc8bqN2TqYhrtVsQ=",
+			"origin": "istio.io/istio/vendor/github.com/envoyproxy/go-control-plane/envoy/config/filter/network/tcp_proxy/v2",
+			"path": "github.com/envoyproxy/go-control-plane/envoy/config/filter/network/tcp_proxy/v2",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "hKU0TW91RntCNubIjLWRmqeFSQY=",
+			"origin": "istio.io/istio/vendor/github.com/envoyproxy/go-control-plane/envoy/config/metrics/v2",
+			"path": "github.com/envoyproxy/go-control-plane/envoy/config/metrics/v2",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "MDmf32DzCUAwu45hWATewfq4pNY=",
+			"origin": "istio.io/istio/vendor/github.com/envoyproxy/go-control-plane/envoy/config/ratelimit/v2",
+			"path": "github.com/envoyproxy/go-control-plane/envoy/config/ratelimit/v2",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "m3VGYMk30RHNDY7q281GRzwP3qo=",
+			"origin": "istio.io/istio/vendor/github.com/envoyproxy/go-control-plane/envoy/config/rbac/v2alpha",
+			"path": "github.com/envoyproxy/go-control-plane/envoy/config/rbac/v2alpha",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "3Kw7JojEgOz+xFlQz9Xi4e0ak48=",
+			"origin": "istio.io/istio/vendor/github.com/envoyproxy/go-control-plane/envoy/config/trace/v2",
+			"path": "github.com/envoyproxy/go-control-plane/envoy/config/trace/v2",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "RsJf7yttqH0g2nPXCYLGVCC4mso=",
+			"origin": "istio.io/istio/vendor/github.com/envoyproxy/go-control-plane/envoy/service/discovery/v2",
+			"path": "github.com/envoyproxy/go-control-plane/envoy/service/discovery/v2",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "9msUZ0ChZk5ou9bquTRt5A6Cbzg=",
+			"origin": "istio.io/istio/vendor/github.com/envoyproxy/go-control-plane/envoy/type",
+			"path": "github.com/envoyproxy/go-control-plane/envoy/type",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "lbVCnlUy1TESYhx8sGx7AyUagX0=",
+			"origin": "istio.io/istio/vendor/github.com/envoyproxy/go-control-plane/envoy/type/matcher",
+			"path": "github.com/envoyproxy/go-control-plane/envoy/type/matcher",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "pKKwKYA+g5/78L5FvVEZMmGb4F0=",
+			"origin": "istio.io/istio/vendor/github.com/envoyproxy/go-control-plane/pkg/util",
+			"path": "github.com/envoyproxy/go-control-plane/pkg/util",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
 			"checksumSHA1": "nlMa0NX11OCS5UHuJszVGTBboWU=",
 			"path": "github.com/ghodss/yaml",
 			"revision": "c7ce16629ff4cd059ed96ed06419dd3856fd3577",
 			"revisionTime": "2018-08-20T08:47:58Z"
+		},
+		{
+			"checksumSHA1": "FiYzbJ+u43Hxt21KeV0URhTJIGo=",
+			"origin": "istio.io/istio/vendor/github.com/gogo/googleapis/google/api",
+			"path": "github.com/gogo/googleapis/google/api",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "nhMevwzTKyKnZGUTyfmNI6qsLb4=",
+			"origin": "istio.io/istio/vendor/github.com/gogo/googleapis/google/rpc",
+			"path": "github.com/gogo/googleapis/google/rpc",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "FhLvgtYfuKY0ow9wtLJRoeg7d6w=",
+			"origin": "istio.io/istio/vendor/github.com/gogo/protobuf/gogoproto",
+			"path": "github.com/gogo/protobuf/gogoproto",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "8UEp6v0Dczw/SlasE0DivB0mAHA=",
+			"origin": "istio.io/istio/vendor/github.com/gogo/protobuf/jsonpb",
+			"path": "github.com/gogo/protobuf/jsonpb",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
 		},
 		{
 			"checksumSHA1": "47nJ3iu1bVvK9jPXwAinFYr4mBU=",
@@ -15,10 +295,24 @@
 			"revisionTime": "2018-10-10T09:29:45Z"
 		},
 		{
+			"checksumSHA1": "F+PKpdY6PyIrxQ8b20TzsM+1JuI=",
+			"origin": "istio.io/istio/vendor/github.com/gogo/protobuf/protoc-gen-gogo/descriptor",
+			"path": "github.com/gogo/protobuf/protoc-gen-gogo/descriptor",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
 			"checksumSHA1": "HPVQZu059/Rfw2bAWM538bVTcUc=",
 			"path": "github.com/gogo/protobuf/sortkeys",
 			"revision": "fd322a3c49630fe6d05737e2b7d9426e6680e28d",
 			"revisionTime": "2018-10-10T09:29:45Z"
+		},
+		{
+			"checksumSHA1": "8+7Pli2T4Tt7NNSUstW5bV/Zm3w=",
+			"origin": "github.com/istio/istio/vendor/github.com/gogo/protobuf/types",
+			"path": "github.com/gogo/protobuf/types",
+			"revision": "565aaa99dcfc7d584e9f8eb9a04844b0b0faa1d5",
+			"revisionTime": "2019-01-05T00:51:17Z"
 		},
 		{
 			"checksumSHA1": "HmbftipkadrLlCfzzVQ+iFHbl6g=",
@@ -27,10 +321,31 @@
 			"revisionTime": "2016-01-25T20:49:56Z"
 		},
 		{
+			"checksumSHA1": "nbCxiVT48CWEg6l8L4SEJ5VfN9c=",
+			"origin": "istio.io/istio/vendor/github.com/golang/groupcache/lru",
+			"path": "github.com/golang/groupcache/lru",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "NPefLsS2pv0+YlXAuJJvkNOMgyE=",
+			"origin": "istio.io/istio/vendor/github.com/golang/protobuf/jsonpb",
+			"path": "github.com/golang/protobuf/jsonpb",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
 			"checksumSHA1": "GaJLoEuMGnP5ofXvuweAI4wx06U=",
 			"path": "github.com/golang/protobuf/proto",
 			"revision": "7be3631955993a734965532f776bad7093f6fc9d",
 			"revisionTime": "2018-10-22T00:44:43Z"
+		},
+		{
+			"checksumSHA1": "8MZSJTbNM/Eo1LEytjxc3SZscUk=",
+			"origin": "istio.io/istio/vendor/github.com/golang/protobuf/protoc-gen-go/descriptor",
+			"path": "github.com/golang/protobuf/protoc-gen-go/descriptor",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
 		},
 		{
 			"checksumSHA1": "tkJPssYejSjuAwE2tdEnoEIj93Q=",
@@ -51,16 +366,44 @@
 			"revisionTime": "2018-10-22T00:44:43Z"
 		},
 		{
+			"checksumSHA1": "JJHwPWE1xgNnX7DsaUOmCrOMKRE=",
+			"origin": "istio.io/istio/vendor/github.com/golang/protobuf/ptypes/struct",
+			"path": "github.com/golang/protobuf/ptypes/struct",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
 			"checksumSHA1": "T42CEYmGiqIXTe36UJ5jLPO33lY=",
 			"path": "github.com/golang/protobuf/ptypes/timestamp",
 			"revision": "7be3631955993a734965532f776bad7093f6fc9d",
 			"revisionTime": "2018-10-22T00:44:43Z"
 		},
 		{
+			"checksumSHA1": "PprJvNnom5ElY0YZ3teOfe81eNw=",
+			"origin": "github.com/istio/istio/vendor/github.com/golang/sync/errgroup",
+			"path": "github.com/golang/sync/errgroup",
+			"revision": "565aaa99dcfc7d584e9f8eb9a04844b0b0faa1d5",
+			"revisionTime": "2019-01-05T00:51:17Z"
+		},
+		{
 			"checksumSHA1": "1wGa+UXlNg3+GI6pKlOCOL2dbt8=",
 			"path": "github.com/google/btree",
 			"revision": "4030bb1f1f0c35b30ca7009e9ebd06849dd45306",
 			"revisionTime": "2018-08-13T15:31:12Z"
+		},
+		{
+			"checksumSHA1": "JnNT0F64A0ldFIgTWCrMM8lttuE=",
+			"origin": "github.com/istio/istio/vendor/github.com/google/go-github/github",
+			"path": "github.com/google/go-github/github",
+			"revision": "565aaa99dcfc7d584e9f8eb9a04844b0b0faa1d5",
+			"revisionTime": "2019-01-05T00:51:17Z"
+		},
+		{
+			"checksumSHA1": "p3IB18uJRs4dL2K5yx24MrLYE9A=",
+			"origin": "github.com/istio/istio/vendor/github.com/google/go-querystring/query",
+			"path": "github.com/google/go-querystring/query",
+			"revision": "565aaa99dcfc7d584e9f8eb9a04844b0b0faa1d5",
+			"revisionTime": "2019-01-05T00:51:17Z"
 		},
 		{
 			"checksumSHA1": "PFtXkXPO7pwRtykVUUXtc07wc7U=",
@@ -87,6 +430,27 @@
 			"revisionTime": "2018-10-19T18:03:48Z"
 		},
 		{
+			"checksumSHA1": "Bev6wUWj9ao5HvSK9NkV4EahnS0=",
+			"origin": "istio.io/istio/vendor/github.com/gorilla/context",
+			"path": "github.com/gorilla/context",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "L1E9bBdNSfdY8gZ1gyQ4O2QaQeo=",
+			"origin": "istio.io/istio/vendor/github.com/gorilla/mux",
+			"path": "github.com/gorilla/mux",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "wpxPw+4dx4Taf7Qb2kKVWdkpFLI=",
+			"origin": "github.com/istio/istio/vendor/github.com/gorilla/websocket",
+			"path": "github.com/gorilla/websocket",
+			"revision": "565aaa99dcfc7d584e9f8eb9a04844b0b0faa1d5",
+			"revisionTime": "2019-01-05T00:51:17Z"
+		},
+		{
 			"checksumSHA1": "T1uAtgdoQP82t1GaT1eZjhYmFmM=",
 			"path": "github.com/gregjones/httpcache",
 			"revision": "9cad4c3443a7200dd6400aef47183728de563a38",
@@ -99,16 +463,134 @@
 			"revisionTime": "2018-03-05T23:10:24Z"
 		},
 		{
+			"checksumSHA1": "xMS30D+iKWddowdNC9HlkEcGFmM=",
+			"origin": "istio.io/istio/vendor/github.com/grpc-ecosystem/go-grpc-middleware",
+			"path": "github.com/grpc-ecosystem/go-grpc-middleware",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "DlgGNXvQGBBdOeckwv80UlkJDlY=",
+			"origin": "istio.io/istio/vendor/github.com/grpc-ecosystem/go-grpc-prometheus",
+			"path": "github.com/grpc-ecosystem/go-grpc-prometheus",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "aCakJd99Gk9BPj8yJIOdQGsb470=",
+			"origin": "istio.io/istio/vendor/github.com/hashicorp/consul/api",
+			"path": "github.com/hashicorp/consul/api",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "DzNtbo2EMyU0c/RAtO2HzvRaUtc=",
+			"origin": "github.com/istio/istio/vendor/github.com/hashicorp/errwrap",
+			"path": "github.com/hashicorp/errwrap",
+			"revision": "565aaa99dcfc7d584e9f8eb9a04844b0b0faa1d5",
+			"revisionTime": "2019-01-05T00:51:17Z"
+		},
+		{
+			"checksumSHA1": "iomVgAkso/9i0ASBYBPv1onK/2M=",
+			"origin": "istio.io/istio/vendor/github.com/hashicorp/go-cleanhttp",
+			"path": "github.com/hashicorp/go-cleanhttp",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "gRVfDFN2fqjPeV3srQj9YuVMfKw=",
+			"origin": "github.com/istio/istio/vendor/github.com/hashicorp/go-multierror",
+			"path": "github.com/hashicorp/go-multierror",
+			"revision": "565aaa99dcfc7d584e9f8eb9a04844b0b0faa1d5",
+			"revisionTime": "2019-01-05T00:51:17Z"
+		},
+		{
+			"checksumSHA1": "txxkEf9JzEiKxcuvTsd3u5uw+80=",
+			"origin": "istio.io/istio/vendor/github.com/hashicorp/go-rootcerts",
+			"path": "github.com/hashicorp/go-rootcerts",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "rKC6iNiYC75Q6l7xL3A+RM7lp1k=",
+			"origin": "istio.io/istio/vendor/github.com/hashicorp/golang-lru",
+			"path": "github.com/hashicorp/golang-lru",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "8Z637dcPkbR5HdLQQBp/9jTbx9Y=",
+			"origin": "istio.io/istio/vendor/github.com/hashicorp/golang-lru/simplelru",
+			"path": "github.com/hashicorp/golang-lru/simplelru",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "E3Xcanc9ouQwL+CZGOUyA/+giLg=",
+			"origin": "istio.io/istio/vendor/github.com/hashicorp/serf/coordinate",
+			"path": "github.com/hashicorp/serf/coordinate",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "kmeSSoCf2PRKB0QUQ7vsQPTrJTo=",
+			"origin": "istio.io/istio/vendor/github.com/howeyc/fsnotify",
+			"path": "github.com/howeyc/fsnotify",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "Z6N0tcRBTl85A5gHh1a796pWc3U=",
+			"origin": "istio.io/istio/vendor/github.com/howeyc/gopass",
+			"path": "github.com/howeyc/gopass",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
 			"checksumSHA1": "yw6trQTxmryPs2hvnI5LHNw3xjc=",
 			"path": "github.com/imdario/mergo",
 			"revision": "ca3dcc1022bae9b5510f3c83705b72db1b1a96f9",
 			"revisionTime": "2018-11-07T19:11:38Z"
 		},
 		{
+			"checksumSHA1": "hR6pE8XWX5E3A1ubNgFGuBxRgO8=",
+			"origin": "istio.io/istio/vendor/github.com/inconshreveable/mousetrap",
+			"path": "github.com/inconshreveable/mousetrap",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "h+Dgkj9jfv5aCwcVaKoh/25hOSY=",
+			"path": "github.com/istio/istio/tests/util",
+			"revision": "565aaa99dcfc7d584e9f8eb9a04844b0b0faa1d5",
+			"revisionTime": "2019-01-05T00:51:17Z"
+		},
+		{
 			"checksumSHA1": "xnz61Omintrn+UB/Rv2Hh5BgTZw=",
 			"path": "github.com/json-iterator/go",
 			"revision": "2433035e513208b0f7bd5b50d0aecd889b2c1ff8",
 			"revisionTime": "2018-09-14T01:48:43Z"
+		},
+		{
+			"checksumSHA1": "hXeStuw0u6IFh7BUg//4uzBH2nk=",
+			"origin": "istio.io/istio/vendor/github.com/lyft/protoc-gen-validate/validate",
+			"path": "github.com/lyft/protoc-gen-validate/validate",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "aodj/cITRyuaZSh84DDhrZjh76U=",
+			"origin": "istio.io/istio/vendor/github.com/matttproud/golang_protobuf_extensions/pbutil",
+			"path": "github.com/matttproud/golang_protobuf_extensions/pbutil",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "4eVxjCKoythMyUbVDP0SpjLpWN8=",
+			"origin": "istio.io/istio/vendor/github.com/mitchellh/go-homedir",
+			"path": "github.com/mitchellh/go-homedir",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
 		},
 		{
 			"checksumSHA1": "ZTcgWKWHsrX0RXYVXn5Xeb8Q0go=",
@@ -123,10 +605,129 @@
 			"revisionTime": "2018-07-18T01:23:57Z"
 		},
 		{
+			"checksumSHA1": "COamdZVD1a2lpMtLurbMz8an1+c=",
+			"origin": "istio.io/istio/vendor/github.com/natefinch/lumberjack",
+			"path": "github.com/natefinch/lumberjack",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
 			"checksumSHA1": "1DFgH7ZOfpUqg0Jsf2719jVgrew=",
 			"path": "github.com/peterbourgon/diskv",
 			"revision": "0646ccaebea1ed1539efcab30cae44019090093f",
 			"revisionTime": "2018-03-12T05:41:25Z"
+		},
+		{
+			"checksumSHA1": "cozq4/7ioFamHmCA2IfgA1c+5Gc=",
+			"origin": "github.com/istio/istio/vendor/github.com/pkg/errors",
+			"path": "github.com/pkg/errors",
+			"revision": "565aaa99dcfc7d584e9f8eb9a04844b0b0faa1d5",
+			"revisionTime": "2019-01-05T00:51:17Z"
+		},
+		{
+			"checksumSHA1": "LuFv4/jlrmFNnDb/5SCSEPAM9vU=",
+			"origin": "github.com/istio/istio/vendor/github.com/pmezard/go-difflib/difflib",
+			"path": "github.com/pmezard/go-difflib/difflib",
+			"revision": "565aaa99dcfc7d584e9f8eb9a04844b0b0faa1d5",
+			"revisionTime": "2019-01-05T00:51:17Z"
+		},
+		{
+			"checksumSHA1": "3y4EKLeQJBLdPoZmfkLI4hYc6T4=",
+			"origin": "istio.io/istio/vendor/github.com/prometheus/client_golang/prometheus",
+			"path": "github.com/prometheus/client_golang/prometheus",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "UBqhkyjCz47+S19MVTigxJ2VjVQ=",
+			"origin": "istio.io/istio/vendor/github.com/prometheus/client_golang/prometheus/internal",
+			"path": "github.com/prometheus/client_golang/prometheus/internal",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "d5BiEvD8MrgpWQ6PQJUvawJsMak=",
+			"origin": "istio.io/istio/vendor/github.com/prometheus/client_golang/prometheus/promhttp",
+			"path": "github.com/prometheus/client_golang/prometheus/promhttp",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "DvwvOlPNAgRntBzt3b3OSRMS2N4=",
+			"origin": "istio.io/istio/vendor/github.com/prometheus/client_model/go",
+			"path": "github.com/prometheus/client_model/go",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "+wZ+Pa6NX+NOxUvayXBXGOcqFe8=",
+			"origin": "istio.io/istio/vendor/github.com/prometheus/common/expfmt",
+			"path": "github.com/prometheus/common/expfmt",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "GP5CS3lUnZ3JAxBWqUj4ZMKU9dg=",
+			"origin": "istio.io/istio/vendor/github.com/prometheus/common/internal/bitbucket.org/ww/goautoneg",
+			"path": "github.com/prometheus/common/internal/bitbucket.org/ww/goautoneg",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "MGnqHnmEqc1fjnYiWReSiW8C27A=",
+			"origin": "istio.io/istio/vendor/github.com/prometheus/common/log",
+			"path": "github.com/prometheus/common/log",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "YU+/K48IMawQnToO4ETE6a+hhj4=",
+			"origin": "istio.io/istio/vendor/github.com/prometheus/common/model",
+			"path": "github.com/prometheus/common/model",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "t5HbntuQEag6T3PQhVTCi+DTk5Q=",
+			"origin": "istio.io/istio/vendor/github.com/prometheus/procfs",
+			"path": "github.com/prometheus/procfs",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "lv9rIcjbVEGo8AT1UCUZXhXrfQc=",
+			"origin": "istio.io/istio/vendor/github.com/prometheus/procfs/internal/util",
+			"path": "github.com/prometheus/procfs/internal/util",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "HSP5hVT0CNMRa8+Xtz4z2Ic5U0E=",
+			"origin": "istio.io/istio/vendor/github.com/prometheus/procfs/nfs",
+			"path": "github.com/prometheus/procfs/nfs",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "yItvTQLUVqm/ArLEbvEhqG0T5a0=",
+			"origin": "istio.io/istio/vendor/github.com/prometheus/procfs/xfs",
+			"path": "github.com/prometheus/procfs/xfs",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "6dcH6XPVGrwV2QxXagG1w9ufCWg=",
+			"origin": "istio.io/istio/vendor/github.com/prometheus/prom2json",
+			"path": "github.com/prometheus/prom2json",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "ua2QhRjKiZP5afbG6KoJQMNPpt4=",
+			"origin": "istio.io/istio/vendor/github.com/sirupsen/logrus",
+			"path": "github.com/sirupsen/logrus",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
 		},
 		{
 			"checksumSHA1": "YMGD3aMJlxhrWBzLlTqPhTLyxG4=",
@@ -141,10 +742,87 @@
 			"revisionTime": "2018-08-31T15:14:32Z"
 		},
 		{
+			"checksumSHA1": "1v0urS25Z6g5DO/ERjhebg40ak8=",
+			"origin": "github.com/istio/istio/vendor/go.uber.org/atomic",
+			"path": "go.uber.org/atomic",
+			"revision": "565aaa99dcfc7d584e9f8eb9a04844b0b0faa1d5",
+			"revisionTime": "2019-01-05T00:51:17Z"
+		},
+		{
+			"checksumSHA1": "A+205iPbWlfDK2UaRL9giQFPpjU=",
+			"origin": "github.com/istio/istio/vendor/go.uber.org/multierr",
+			"path": "go.uber.org/multierr",
+			"revision": "565aaa99dcfc7d584e9f8eb9a04844b0b0faa1d5",
+			"revisionTime": "2019-01-05T00:51:17Z"
+		},
+		{
+			"checksumSHA1": "e+rFtYDGY2bDM+ZP8yVQFJ94tZA=",
+			"origin": "github.com/istio/istio/vendor/go.uber.org/zap",
+			"path": "go.uber.org/zap",
+			"revision": "565aaa99dcfc7d584e9f8eb9a04844b0b0faa1d5",
+			"revisionTime": "2019-01-05T00:51:17Z"
+		},
+		{
+			"checksumSHA1": "HYo/9nwrY08NQA+2ItPOAH8IFW8=",
+			"origin": "github.com/istio/istio/vendor/go.uber.org/zap/buffer",
+			"path": "go.uber.org/zap/buffer",
+			"revision": "565aaa99dcfc7d584e9f8eb9a04844b0b0faa1d5",
+			"revisionTime": "2019-01-05T00:51:17Z"
+		},
+		{
+			"checksumSHA1": "MuxOAtZEsJitlWBzhmpm2vGiHok=",
+			"origin": "github.com/istio/istio/vendor/go.uber.org/zap/internal/bufferpool",
+			"path": "go.uber.org/zap/internal/bufferpool",
+			"revision": "565aaa99dcfc7d584e9f8eb9a04844b0b0faa1d5",
+			"revisionTime": "2019-01-05T00:51:17Z"
+		},
+		{
+			"checksumSHA1": "uC0L9eCSAYcCWNC8udJk/t1vvIU=",
+			"origin": "github.com/istio/istio/vendor/go.uber.org/zap/internal/color",
+			"path": "go.uber.org/zap/internal/color",
+			"revision": "565aaa99dcfc7d584e9f8eb9a04844b0b0faa1d5",
+			"revisionTime": "2019-01-05T00:51:17Z"
+		},
+		{
+			"checksumSHA1": "b80CJExrVpXu3SA1iCQ6uLqTn2c=",
+			"origin": "github.com/istio/istio/vendor/go.uber.org/zap/internal/exit",
+			"path": "go.uber.org/zap/internal/exit",
+			"revision": "565aaa99dcfc7d584e9f8eb9a04844b0b0faa1d5",
+			"revisionTime": "2019-01-05T00:51:17Z"
+		},
+		{
+			"checksumSHA1": "mRD6lujPvXPkbC3+byNwO/bNVu8=",
+			"origin": "github.com/istio/istio/vendor/go.uber.org/zap/zapcore",
+			"path": "go.uber.org/zap/zapcore",
+			"revision": "565aaa99dcfc7d584e9f8eb9a04844b0b0faa1d5",
+			"revisionTime": "2019-01-05T00:51:17Z"
+		},
+		{
+			"checksumSHA1": "DaEfYKpBIPTJulBRwIa9QP3ztT0=",
+			"origin": "istio.io/istio/vendor/go.uber.org/zap/zapgrpc",
+			"path": "go.uber.org/zap/zapgrpc",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
 			"checksumSHA1": "BSPDVKviqHQaG2phOFN690zAKB8=",
 			"path": "golang.org/x/crypto/ssh/terminal",
 			"revision": "505ab145d0a99da450461ae2c1a9f6cd10d1f447",
 			"revisionTime": "2018-09-26T22:07:39Z"
+		},
+		{
+			"checksumSHA1": "GtamqiJoL7PGHsN454AoffBFMa8=",
+			"origin": "github.com/istio/istio/vendor/golang.org/x/net/context",
+			"path": "golang.org/x/net/context",
+			"revision": "565aaa99dcfc7d584e9f8eb9a04844b0b0faa1d5",
+			"revisionTime": "2019-01-05T00:51:17Z"
+		},
+		{
+			"checksumSHA1": "WHc3uByvGaMcnSoI21fhzYgbOgg=",
+			"origin": "github.com/istio/istio/vendor/golang.org/x/net/context/ctxhttp",
+			"path": "golang.org/x/net/context/ctxhttp",
+			"revision": "565aaa99dcfc7d584e9f8eb9a04844b0b0faa1d5",
+			"revisionTime": "2019-01-05T00:51:17Z"
 		},
 		{
 			"checksumSHA1": "pCY4YtdNKVBYRbNvODjx8hj0hIs=",
@@ -171,6 +849,62 @@
 			"revisionTime": "2018-10-11T05:27:23Z"
 		},
 		{
+			"checksumSHA1": "UxahDzW2v4mf/+aFxruuupaoIwo=",
+			"origin": "github.com/istio/istio/vendor/golang.org/x/net/internal/timeseries",
+			"path": "golang.org/x/net/internal/timeseries",
+			"revision": "565aaa99dcfc7d584e9f8eb9a04844b0b0faa1d5",
+			"revisionTime": "2019-01-05T00:51:17Z"
+		},
+		{
+			"checksumSHA1": "3xyuaSNmClqG4YWC7g0isQIbUTc=",
+			"origin": "github.com/istio/istio/vendor/golang.org/x/net/lex/httplex",
+			"path": "golang.org/x/net/lex/httplex",
+			"revision": "565aaa99dcfc7d584e9f8eb9a04844b0b0faa1d5",
+			"revisionTime": "2019-01-05T00:51:17Z"
+		},
+		{
+			"checksumSHA1": "rJn3m/27kO+2IU6KCCZ74Miby+8=",
+			"origin": "github.com/istio/istio/vendor/golang.org/x/net/trace",
+			"path": "golang.org/x/net/trace",
+			"revision": "565aaa99dcfc7d584e9f8eb9a04844b0b0faa1d5",
+			"revisionTime": "2019-01-05T00:51:17Z"
+		},
+		{
+			"checksumSHA1": "zVUMRGUN1pif4ho0lcvhKCR3phQ=",
+			"origin": "istio.io/istio/vendor/golang.org/x/oauth2",
+			"path": "golang.org/x/oauth2",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "z7mSaGccufg15ki2YPd+M5PlsUc=",
+			"origin": "istio.io/istio/vendor/golang.org/x/oauth2/google",
+			"path": "golang.org/x/oauth2/google",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "SYinbTOs4JSXuw1R5RhiT+NnKNc=",
+			"origin": "istio.io/istio/vendor/golang.org/x/oauth2/internal",
+			"path": "golang.org/x/oauth2/internal",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "huVltYnXdRFDJLgp/ZP9IALzG7g=",
+			"origin": "istio.io/istio/vendor/golang.org/x/oauth2/jws",
+			"path": "golang.org/x/oauth2/jws",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "QPndO4ODVdEBILRhJ6869UDAoHc=",
+			"origin": "istio.io/istio/vendor/golang.org/x/oauth2/jwt",
+			"path": "golang.org/x/oauth2/jwt",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
 			"checksumSHA1": "1yVGALNSp/F8u6xlX8WN3ksPwRg=",
 			"path": "golang.org/x/sys/unix",
 			"revision": "a5c9d58dba9a56f97aaa86f55e638b718c5a6c42",
@@ -181,6 +915,20 @@
 			"path": "golang.org/x/sys/windows",
 			"revision": "a5c9d58dba9a56f97aaa86f55e638b718c5a6c42",
 			"revisionTime": "2018-11-28T10:54:42Z"
+		},
+		{
+			"checksumSHA1": "uCpbmktijfpv9WhfAH3VTHu9GKA=",
+			"origin": "istio.io/istio/vendor/golang.org/x/sys/windows/registry",
+			"path": "golang.org/x/sys/windows/registry",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "uVlUSSKplihZG7N+QJ6fzDZ4Kh8=",
+			"origin": "istio.io/istio/vendor/golang.org/x/sys/windows/svc/eventlog",
+			"path": "golang.org/x/sys/windows/svc/eventlog",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
 		},
 		{
 			"checksumSHA1": "CbpjEkkOeh0fdM/V8xKDdI0AA88=",
@@ -213,16 +961,606 @@
 			"revisionTime": "2018-11-08T03:19:45Z"
 		},
 		{
+			"checksumSHA1": "HWj+YwYrW0wd8R+M4GlZPoPQUUo=",
+			"origin": "istio.io/istio/vendor/google.golang.org/appengine",
+			"path": "google.golang.org/appengine",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "2PeIxkIqfK2OhBSoGSPaMkbV3RM=",
+			"origin": "istio.io/istio/vendor/google.golang.org/appengine/internal",
+			"path": "google.golang.org/appengine/internal",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "opmaaLRXyrVDJ6a+poG9RyElLTw=",
+			"origin": "istio.io/istio/vendor/google.golang.org/appengine/internal/app_identity",
+			"path": "google.golang.org/appengine/internal/app_identity",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "7YL8Hz2LBDdKh8SD4eVvJVSgfAQ=",
+			"origin": "istio.io/istio/vendor/google.golang.org/appengine/internal/base",
+			"path": "google.golang.org/appengine/internal/base",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "gfdbHUy+G3zDgQsqms4CVeSCt7A=",
+			"origin": "istio.io/istio/vendor/google.golang.org/appengine/internal/datastore",
+			"path": "google.golang.org/appengine/internal/datastore",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "X7FgmjixIu0LvcOaMkLaMdJL50o=",
+			"origin": "istio.io/istio/vendor/google.golang.org/appengine/internal/log",
+			"path": "google.golang.org/appengine/internal/log",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "lMn9hQobQweyRieKyvMFlW95pHw=",
+			"origin": "istio.io/istio/vendor/google.golang.org/appengine/internal/modules",
+			"path": "google.golang.org/appengine/internal/modules",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "SVUFcZ6oyDF8wfcNLZZH5xDcVYI=",
+			"origin": "istio.io/istio/vendor/google.golang.org/appengine/internal/remote_api",
+			"path": "google.golang.org/appengine/internal/remote_api",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "ZUXfdk1JiSf0BUfkQxgRRZSjATg=",
+			"origin": "istio.io/istio/vendor/google.golang.org/appengine/internal/urlfetch",
+			"path": "google.golang.org/appengine/internal/urlfetch",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "akOV9pYnCbcPA8wJUutSQVibdyg=",
+			"origin": "istio.io/istio/vendor/google.golang.org/appengine/urlfetch",
+			"path": "google.golang.org/appengine/urlfetch",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "MgYFT27I9gfAtSVBpGVqkCYOj3U=",
+			"origin": "github.com/istio/istio/vendor/google.golang.org/genproto/googleapis/rpc/status",
+			"path": "google.golang.org/genproto/googleapis/rpc/status",
+			"revision": "565aaa99dcfc7d584e9f8eb9a04844b0b0faa1d5",
+			"revisionTime": "2019-01-05T00:51:17Z"
+		},
+		{
+			"checksumSHA1": "wQWQHCnTF9fIlaPBg0GioXQWa2A=",
+			"origin": "github.com/istio/istio/vendor/google.golang.org/grpc",
+			"path": "google.golang.org/grpc",
+			"revision": "565aaa99dcfc7d584e9f8eb9a04844b0b0faa1d5",
+			"revisionTime": "2019-01-05T00:51:17Z"
+		},
+		{
+			"checksumSHA1": "B+kZFVP8zRiQMpoEb39Mp2oSmqg=",
+			"origin": "github.com/istio/istio/vendor/google.golang.org/grpc/balancer",
+			"path": "google.golang.org/grpc/balancer",
+			"revision": "565aaa99dcfc7d584e9f8eb9a04844b0b0faa1d5",
+			"revisionTime": "2019-01-05T00:51:17Z"
+		},
+		{
+			"checksumSHA1": "lw+L836hLeH8+//le+C+ycddCCU=",
+			"origin": "github.com/istio/istio/vendor/google.golang.org/grpc/balancer/base",
+			"path": "google.golang.org/grpc/balancer/base",
+			"revision": "565aaa99dcfc7d584e9f8eb9a04844b0b0faa1d5",
+			"revisionTime": "2019-01-05T00:51:17Z"
+		},
+		{
+			"checksumSHA1": "DJ1AtOk4Pu7bqtUMob95Hw8HPNw=",
+			"origin": "github.com/istio/istio/vendor/google.golang.org/grpc/balancer/roundrobin",
+			"path": "google.golang.org/grpc/balancer/roundrobin",
+			"revision": "565aaa99dcfc7d584e9f8eb9a04844b0b0faa1d5",
+			"revisionTime": "2019-01-05T00:51:17Z"
+		},
+		{
+			"checksumSHA1": "DmKj+1hxJ/0T+e2kwF1EgUaVcQg=",
+			"origin": "istio.io/istio/vendor/google.golang.org/grpc/channelz",
+			"path": "google.golang.org/grpc/channelz",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "R3tuACGAPyK4lr+oSNt1saUzC0M=",
+			"origin": "github.com/istio/istio/vendor/google.golang.org/grpc/codes",
+			"path": "google.golang.org/grpc/codes",
+			"revision": "565aaa99dcfc7d584e9f8eb9a04844b0b0faa1d5",
+			"revisionTime": "2019-01-05T00:51:17Z"
+		},
+		{
+			"checksumSHA1": "XH2WYcDNwVO47zYShREJjcYXm0Y=",
+			"origin": "github.com/istio/istio/vendor/google.golang.org/grpc/connectivity",
+			"path": "google.golang.org/grpc/connectivity",
+			"revision": "565aaa99dcfc7d584e9f8eb9a04844b0b0faa1d5",
+			"revisionTime": "2019-01-05T00:51:17Z"
+		},
+		{
+			"checksumSHA1": "wA6y5rkH1v4bWBe5M1r/Hdtgma4=",
+			"origin": "github.com/istio/istio/vendor/google.golang.org/grpc/credentials",
+			"path": "google.golang.org/grpc/credentials",
+			"revision": "565aaa99dcfc7d584e9f8eb9a04844b0b0faa1d5",
+			"revisionTime": "2019-01-05T00:51:17Z"
+		},
+		{
+			"checksumSHA1": "cfLb+pzWB+Glwp82rgfcEST1mv8=",
+			"origin": "github.com/istio/istio/vendor/google.golang.org/grpc/encoding",
+			"path": "google.golang.org/grpc/encoding",
+			"revision": "565aaa99dcfc7d584e9f8eb9a04844b0b0faa1d5",
+			"revisionTime": "2019-01-05T00:51:17Z"
+		},
+		{
+			"checksumSHA1": "LKKkn7EYA+Do9Qwb2/SUKLFNxoo=",
+			"origin": "github.com/istio/istio/vendor/google.golang.org/grpc/encoding/proto",
+			"path": "google.golang.org/grpc/encoding/proto",
+			"revision": "565aaa99dcfc7d584e9f8eb9a04844b0b0faa1d5",
+			"revisionTime": "2019-01-05T00:51:17Z"
+		},
+		{
+			"checksumSHA1": "yzCXCaMFlngslRzVZBzDD35YvJs=",
+			"origin": "istio.io/istio/vendor/google.golang.org/grpc/grpclb/grpc_lb_v1/messages",
+			"path": "google.golang.org/grpc/grpclb/grpc_lb_v1/messages",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "ZPPSFisPDz2ANO4FBZIft+fRxyk=",
+			"origin": "github.com/istio/istio/vendor/google.golang.org/grpc/grpclog",
+			"path": "google.golang.org/grpc/grpclog",
+			"revision": "565aaa99dcfc7d584e9f8eb9a04844b0b0faa1d5",
+			"revisionTime": "2019-01-05T00:51:17Z"
+		},
+		{
+			"checksumSHA1": "8uLpHZuwD6Ug/QlvN94QyHaOack=",
+			"origin": "github.com/istio/istio/vendor/google.golang.org/grpc/internal",
+			"path": "google.golang.org/grpc/internal",
+			"revision": "565aaa99dcfc7d584e9f8eb9a04844b0b0faa1d5",
+			"revisionTime": "2019-01-05T00:51:17Z"
+		},
+		{
+			"checksumSHA1": "uDJA7QK2iGnEwbd9TPqkLaM+xuU=",
+			"origin": "github.com/istio/istio/vendor/google.golang.org/grpc/internal/backoff",
+			"path": "google.golang.org/grpc/internal/backoff",
+			"revision": "565aaa99dcfc7d584e9f8eb9a04844b0b0faa1d5",
+			"revisionTime": "2019-01-05T00:51:17Z"
+		},
+		{
+			"checksumSHA1": "8dcRbrJWAcFQIXVuchR6z4ItIzg=",
+			"origin": "github.com/istio/istio/vendor/google.golang.org/grpc/internal/channelz",
+			"path": "google.golang.org/grpc/internal/channelz",
+			"revision": "565aaa99dcfc7d584e9f8eb9a04844b0b0faa1d5",
+			"revisionTime": "2019-01-05T00:51:17Z"
+		},
+		{
+			"checksumSHA1": "5dFUCEaPjKwza9kwKqgljp8ckU4=",
+			"origin": "github.com/istio/istio/vendor/google.golang.org/grpc/internal/envconfig",
+			"path": "google.golang.org/grpc/internal/envconfig",
+			"revision": "565aaa99dcfc7d584e9f8eb9a04844b0b0faa1d5",
+			"revisionTime": "2019-01-05T00:51:17Z"
+		},
+		{
+			"checksumSHA1": "70gndc/uHwyAl3D45zqp7vyHWlo=",
+			"origin": "github.com/istio/istio/vendor/google.golang.org/grpc/internal/grpcrand",
+			"path": "google.golang.org/grpc/internal/grpcrand",
+			"revision": "565aaa99dcfc7d584e9f8eb9a04844b0b0faa1d5",
+			"revisionTime": "2019-01-05T00:51:17Z"
+		},
+		{
+			"checksumSHA1": "3/+ZIaJhkKSSqt6Z3VDS0Q8zMXA=",
+			"origin": "github.com/istio/istio/vendor/google.golang.org/grpc/internal/transport",
+			"path": "google.golang.org/grpc/internal/transport",
+			"revision": "565aaa99dcfc7d584e9f8eb9a04844b0b0faa1d5",
+			"revisionTime": "2019-01-05T00:51:17Z"
+		},
+		{
+			"checksumSHA1": "hcuHgKp8W0wIzoCnNfKI8NUss5o=",
+			"origin": "github.com/istio/istio/vendor/google.golang.org/grpc/keepalive",
+			"path": "google.golang.org/grpc/keepalive",
+			"revision": "565aaa99dcfc7d584e9f8eb9a04844b0b0faa1d5",
+			"revisionTime": "2019-01-05T00:51:17Z"
+		},
+		{
+			"checksumSHA1": "OjIAi5AzqlQ7kLtdAyjvdgMf6hc=",
+			"origin": "github.com/istio/istio/vendor/google.golang.org/grpc/metadata",
+			"path": "google.golang.org/grpc/metadata",
+			"revision": "565aaa99dcfc7d584e9f8eb9a04844b0b0faa1d5",
+			"revisionTime": "2019-01-05T00:51:17Z"
+		},
+		{
+			"checksumSHA1": "VvGBoawND0urmYDy11FT+U1IHtU=",
+			"origin": "github.com/istio/istio/vendor/google.golang.org/grpc/naming",
+			"path": "google.golang.org/grpc/naming",
+			"revision": "565aaa99dcfc7d584e9f8eb9a04844b0b0faa1d5",
+			"revisionTime": "2019-01-05T00:51:17Z"
+		},
+		{
+			"checksumSHA1": "n5EgDdBqFMa2KQFhtl+FF/4gIFo=",
+			"origin": "github.com/istio/istio/vendor/google.golang.org/grpc/peer",
+			"path": "google.golang.org/grpc/peer",
+			"revision": "565aaa99dcfc7d584e9f8eb9a04844b0b0faa1d5",
+			"revisionTime": "2019-01-05T00:51:17Z"
+		},
+		{
+			"checksumSHA1": "GEq6wwE1qWLmkaM02SjxBmmnHDo=",
+			"origin": "github.com/istio/istio/vendor/google.golang.org/grpc/resolver",
+			"path": "google.golang.org/grpc/resolver",
+			"revision": "565aaa99dcfc7d584e9f8eb9a04844b0b0faa1d5",
+			"revisionTime": "2019-01-05T00:51:17Z"
+		},
+		{
+			"checksumSHA1": "90rwIeFK1zLW8M57MfzmejpCwP4=",
+			"origin": "github.com/istio/istio/vendor/google.golang.org/grpc/resolver/dns",
+			"path": "google.golang.org/grpc/resolver/dns",
+			"revision": "565aaa99dcfc7d584e9f8eb9a04844b0b0faa1d5",
+			"revisionTime": "2019-01-05T00:51:17Z"
+		},
+		{
+			"checksumSHA1": "zs9M4xE8Lyg4wvuYvR00XoBxmuw=",
+			"origin": "github.com/istio/istio/vendor/google.golang.org/grpc/resolver/passthrough",
+			"path": "google.golang.org/grpc/resolver/passthrough",
+			"revision": "565aaa99dcfc7d584e9f8eb9a04844b0b0faa1d5",
+			"revisionTime": "2019-01-05T00:51:17Z"
+		},
+		{
+			"checksumSHA1": "YclPgme2gT3S0hTkHVdE1zAxJdo=",
+			"origin": "github.com/istio/istio/vendor/google.golang.org/grpc/stats",
+			"path": "google.golang.org/grpc/stats",
+			"revision": "565aaa99dcfc7d584e9f8eb9a04844b0b0faa1d5",
+			"revisionTime": "2019-01-05T00:51:17Z"
+		},
+		{
+			"checksumSHA1": "t/NhHuykWsxY0gEBd2WIv5RVBK8=",
+			"origin": "github.com/istio/istio/vendor/google.golang.org/grpc/status",
+			"path": "google.golang.org/grpc/status",
+			"revision": "565aaa99dcfc7d584e9f8eb9a04844b0b0faa1d5",
+			"revisionTime": "2019-01-05T00:51:17Z"
+		},
+		{
+			"checksumSHA1": "qvArRhlrww5WvRmbyMF2mUfbJew=",
+			"origin": "github.com/istio/istio/vendor/google.golang.org/grpc/tap",
+			"path": "google.golang.org/grpc/tap",
+			"revision": "565aaa99dcfc7d584e9f8eb9a04844b0b0faa1d5",
+			"revisionTime": "2019-01-05T00:51:17Z"
+		},
+		{
+			"checksumSHA1": "Lo7dGbb2DxDJmMIYAgxoBTO5j34=",
+			"origin": "istio.io/istio/vendor/google.golang.org/grpc/transport",
+			"path": "google.golang.org/grpc/transport",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "183N5a7J9ZbBq+GhRDbsSEFu3JY=",
+			"origin": "istio.io/istio/vendor/gopkg.in/alecthomas/kingpin.v2",
+			"path": "gopkg.in/alecthomas/kingpin.v2",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
 			"checksumSHA1": "COfXAfInbcFT/YRsvLUQnNKHzF0=",
 			"path": "gopkg.in/inf.v0",
 			"revision": "d2d2541c53f18d2a059457998ce2876cc8e67cbf",
 			"revisionTime": "2018-03-26T17:23:32Z"
 		},
 		{
+			"checksumSHA1": "zQvKIk2NXS9/lHKC6D/andCrzdY=",
+			"origin": "istio.io/istio/vendor/gopkg.in/validator.v2",
+			"path": "gopkg.in/validator.v2",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
 			"checksumSHA1": "AnKBN2Q4AWaSNb0JyINBQbnpxGM=",
 			"path": "gopkg.in/yaml.v2",
 			"revision": "7f97868eec74b32b0982dd158a51a446d1da7eb5",
 			"revisionTime": "2018-02-23T19:12:37Z"
+		},
+		{
+			"checksumSHA1": "WYwsd5O4ZB8ZptqZUvkZJjAm8O0=",
+			"origin": "istio.io/istio/vendor/istio.io/api/authentication/v1alpha1",
+			"path": "istio.io/api/authentication/v1alpha1",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "f65JrB4zRC/GBgUnldKKEoRjkRg=",
+			"origin": "istio.io/istio/vendor/istio.io/api/envoy/config/filter/http/authn/v2alpha1",
+			"path": "istio.io/api/envoy/config/filter/http/authn/v2alpha1",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "3qsBUiHgeXRNLL1PnBxv1BDoFag=",
+			"origin": "istio.io/istio/vendor/istio.io/api/envoy/config/filter/http/jwt_auth/v2alpha1",
+			"path": "istio.io/api/envoy/config/filter/http/jwt_auth/v2alpha1",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "85ef8NGzj7wZACxdt0HOA9z7CCE=",
+			"origin": "istio.io/istio/vendor/istio.io/api/mesh/v1alpha1",
+			"path": "istio.io/api/mesh/v1alpha1",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "xNL0dcoLLz3b4KGa4WRvE9FdBHU=",
+			"origin": "istio.io/istio/vendor/istio.io/api/mixer/v1",
+			"path": "istio.io/api/mixer/v1",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "DJMxGozg7iPwesQuryg3EBlbMmc=",
+			"origin": "istio.io/istio/vendor/istio.io/api/mixer/v1/config/client",
+			"path": "istio.io/api/mixer/v1/config/client",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "dHCUbewJsirQLpG4BMU8KmsWSd4=",
+			"origin": "istio.io/istio/vendor/istio.io/api/networking/v1alpha3",
+			"path": "istio.io/api/networking/v1alpha3",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "wZEnVl6WRzI3C7BDs+IXT+7x3Ro=",
+			"origin": "istio.io/istio/vendor/istio.io/api/rbac/v1alpha1",
+			"path": "istio.io/api/rbac/v1alpha1",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "KabW1MAd5JFgr/5mYd2d2bkqEEA=",
+			"path": "istio.io/istio/pilot/cmd",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "aFVscdSgbAHSDvttSgjR5NCcbkQ=",
+			"path": "istio.io/istio/pilot/pkg/bootstrap",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "V3xMHFlZKVmmcW0ngAqKY29NcFo=",
+			"path": "istio.io/istio/pilot/pkg/config/aggregate",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "/cqiZG1ErFJYEe31GKF+KsNQyVo=",
+			"path": "istio.io/istio/pilot/pkg/config/clusterregistry",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "xzVIFymeZGzjL4sQmFqqeHm4ixM=",
+			"path": "istio.io/istio/pilot/pkg/config/kube/crd",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "nHmdGXkHErN0P6wR5l4lk2qnZu0=",
+			"path": "istio.io/istio/pilot/pkg/config/kube/ingress",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "uvNw+OCPZgbz/tW+vpP2bw8JXN0=",
+			"path": "istio.io/istio/pilot/pkg/config/memory",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "jhJT9n2pzGDSPa0TLr6o7t7gX5Q=",
+			"path": "istio.io/istio/pilot/pkg/config/monitor",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "ogPc0JkrMxEvJDDT3e52yHh+eAM=",
+			"path": "istio.io/istio/pilot/pkg/model",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "izFO9Xobe+pd1npVYiJVjhbxNZs=",
+			"path": "istio.io/istio/pilot/pkg/model/test",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "2q8BbkB52PpmyxbbYDP03C4VhFE=",
+			"path": "istio.io/istio/pilot/pkg/networking/core",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "128UYaR4ROFiKmF1CKGpQJQfBXA=",
+			"path": "istio.io/istio/pilot/pkg/networking/core/v1alpha3",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "4AUvlj1BVHQwKi8MiZ8Dxma+Wgc=",
+			"path": "istio.io/istio/pilot/pkg/networking/core/v1alpha3/route",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "68dBAEIv2Uwb+vNKbgQ64rOrpMI=",
+			"path": "istio.io/istio/pilot/pkg/networking/plugin",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "EnvWfcHsnu8R2cEIju7wC1CVO9w=",
+			"path": "istio.io/istio/pilot/pkg/networking/plugin/authn",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "49wxTpCmHv2PUKFkPVCmAVmZZRs=",
+			"path": "istio.io/istio/pilot/pkg/networking/plugin/authz",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "/TklNrk4Lnb/piUUCpad/8qi6BU=",
+			"path": "istio.io/istio/pilot/pkg/networking/plugin/envoyfilter",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "2OLx23rH1WK3pEcLvmJb9rZZEg8=",
+			"path": "istio.io/istio/pilot/pkg/networking/plugin/health",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "Uoeo+ktv9jaCkYOcd+rpRFI1n2Q=",
+			"path": "istio.io/istio/pilot/pkg/networking/plugin/mixer",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "1Knnc2XwY3v/dRFZgo9ItJuxTOA=",
+			"path": "istio.io/istio/pilot/pkg/networking/plugin/registry",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "kGBL4dMOoS6emHV0UT9Bk83Oyug=",
+			"path": "istio.io/istio/pilot/pkg/networking/util",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "6SuGvUlUFMmRYNAQl0vaNh6vbgM=",
+			"path": "istio.io/istio/pilot/pkg/proxy",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "CBtR9FDt2BJFrQpT3tk+Q2MQ6GQ=",
+			"path": "istio.io/istio/pilot/pkg/proxy/envoy",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "g1ApdhymjWpI8jqei1D3/F/cCOc=",
+			"path": "istio.io/istio/pilot/pkg/proxy/envoy/v2",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "/S4TH3BlTWMJ/TJJ1jVR5Xq9ZfU=",
+			"path": "istio.io/istio/pilot/pkg/serviceregistry",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "4kMxb98rrQjS6UWpNgi+WnfMoP0=",
+			"path": "istio.io/istio/pilot/pkg/serviceregistry/aggregate",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "thgshL8x/MpAZDxeGAAyPNSs7sw=",
+			"path": "istio.io/istio/pilot/pkg/serviceregistry/cloudfoundry",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "yepW7gBTwWWJwNOrjRHyL2Y6PMI=",
+			"path": "istio.io/istio/pilot/pkg/serviceregistry/consul",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "s7CAo8jxyKcGYhJTj+LYZpR5Z2A=",
+			"path": "istio.io/istio/pilot/pkg/serviceregistry/external",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "k0eZzuX++FfizAAjG4RB/5Re7y0=",
+			"path": "istio.io/istio/pilot/pkg/serviceregistry/kube",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "KVX/alQVTERl9gs+SGo+Hw+7NAw=",
+			"path": "istio.io/istio/pilot/pkg/serviceregistry/memory",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "BViw9y/yWxEolE6fQhaKvvrfSMw=",
+			"path": "istio.io/istio/pkg/bootstrap",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "EEqasz2vx2uODlWvMY4wynWB1o0=",
+			"path": "istio.io/istio/pkg/cache",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "38TODeu+vx/jk99Pv6hEYamUtn4=",
+			"path": "istio.io/istio/pkg/ctrlz",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "G006lJ/b4HliaLdCmv6izVC2KeU=",
+			"path": "istio.io/istio/pkg/ctrlz/fw",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "wfrC0UGfFoJg15hpdyDbvEYCWpo=",
+			"path": "istio.io/istio/pkg/ctrlz/topics",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "kmwBruIxFRFQieSXNXfahFkS8So=",
+			"path": "istio.io/istio/pkg/kube",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "wmzocEUCRdMPJS8EHQpFUdYte0A=",
+			"path": "istio.io/istio/pkg/log",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "IoQ3/bfAfPKB7NJhBeypUmr+4kw=",
+			"path": "istio.io/istio/pkg/util",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "ZWzHDnT7X90avDFI3X7lMDwkqdk=",
+			"path": "istio.io/istio/pkg/version",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
 		},
 		{
 			"checksumSHA1": "dwwoN+THAC1dJELaF0DrXOMXR74=",
@@ -399,6 +1737,41 @@
 			"revisionTime": "2018-06-28T04:08:59Z"
 		},
 		{
+			"checksumSHA1": "uhWn6hORRQCMi799l5o3s2lJ+ZU=",
+			"origin": "istio.io/istio/vendor/k8s.io/apiextensions-apiserver/pkg/apis/apiextensions",
+			"path": "k8s.io/apiextensions-apiserver/pkg/apis/apiextensions",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "MEnQ70Ag7hFJuw/REXXAwHyFMrg=",
+			"origin": "istio.io/istio/vendor/k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/v1beta1",
+			"path": "k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/v1beta1",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "vX7h/brwuGiha/YMHQVAZGcXkG8=",
+			"origin": "istio.io/istio/vendor/k8s.io/apiextensions-apiserver/pkg/client/clientset/clientset",
+			"path": "k8s.io/apiextensions-apiserver/pkg/client/clientset/clientset",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "+cBDN/F4DC2Fl2Q9r+KanlzfGSk=",
+			"origin": "istio.io/istio/vendor/k8s.io/apiextensions-apiserver/pkg/client/clientset/clientset/scheme",
+			"path": "k8s.io/apiextensions-apiserver/pkg/client/clientset/clientset/scheme",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "jZ/6RVzao85dd5TuuKksHNjta/Y=",
+			"origin": "istio.io/istio/vendor/k8s.io/apiextensions-apiserver/pkg/client/clientset/clientset/typed/apiextensions/v1beta1",
+			"path": "k8s.io/apiextensions-apiserver/pkg/client/clientset/clientset/typed/apiextensions/v1beta1",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
 			"checksumSHA1": "eD3XRvVzKmBUr4mFMD9hAMMuLSE=",
 			"path": "k8s.io/apimachinery/pkg/api/errors",
 			"revision": "103fd098999dc9c0c88536f5c9ad2e5da39373ae",
@@ -415,6 +1788,13 @@
 			"path": "k8s.io/apimachinery/pkg/api/resource",
 			"revision": "103fd098999dc9c0c88536f5c9ad2e5da39373ae",
 			"revisionTime": "2018-06-21T03:03:51Z"
+		},
+		{
+			"checksumSHA1": "aczrnURAXtc1AKNVNE9gpGXrvm4=",
+			"origin": "istio.io/istio/vendor/k8s.io/apimachinery/pkg/apis/meta/internalversion",
+			"path": "k8s.io/apimachinery/pkg/apis/meta/internalversion",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
 		},
 		{
 			"checksumSHA1": "ER7IAk0VsKZYNy+/iNdIyRI98ug=",
@@ -519,10 +1899,24 @@
 			"revisionTime": "2018-06-21T03:03:51Z"
 		},
 		{
+			"checksumSHA1": "1ufnWmjIV06+kIedtpUTD1P6XNI=",
+			"origin": "istio.io/istio/vendor/k8s.io/apimachinery/pkg/util/cache",
+			"path": "k8s.io/apimachinery/pkg/util/cache",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
 			"checksumSHA1": "Gtwo9p42g21v46mUVvj/Qh8yUSE=",
 			"path": "k8s.io/apimachinery/pkg/util/clock",
 			"revision": "103fd098999dc9c0c88536f5c9ad2e5da39373ae",
 			"revisionTime": "2018-06-21T03:03:51Z"
+		},
+		{
+			"checksumSHA1": "hdHxrsm0oxtcElda5J61tVZMr60=",
+			"origin": "istio.io/istio/vendor/k8s.io/apimachinery/pkg/util/diff",
+			"path": "k8s.io/apimachinery/pkg/util/diff",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
 		},
 		{
 			"checksumSHA1": "hHYW7OWXFMbRVotl2830pa4kO+Y=",
@@ -549,6 +1943,13 @@
 			"revisionTime": "2018-06-21T03:03:51Z"
 		},
 		{
+			"checksumSHA1": "Gez2pDzazzX81989dxm1WTuAhbs=",
+			"origin": "istio.io/istio/vendor/k8s.io/apimachinery/pkg/util/mergepatch",
+			"path": "k8s.io/apimachinery/pkg/util/mergepatch",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
 			"checksumSHA1": "OrKcR7aVHsamDGWtb2Z0/kAVOtk=",
 			"path": "k8s.io/apimachinery/pkg/util/net",
 			"revision": "103fd098999dc9c0c88536f5c9ad2e5da39373ae",
@@ -565,6 +1966,13 @@
 			"path": "k8s.io/apimachinery/pkg/util/sets",
 			"revision": "103fd098999dc9c0c88536f5c9ad2e5da39373ae",
 			"revisionTime": "2018-06-21T03:03:51Z"
+		},
+		{
+			"checksumSHA1": "wBICVufBFxsV+EPn8KoUULLW1MU=",
+			"origin": "istio.io/istio/vendor/k8s.io/apimachinery/pkg/util/strategicpatch",
+			"path": "k8s.io/apimachinery/pkg/util/strategicpatch",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
 		},
 		{
 			"checksumSHA1": "0zZltQ8NUw+PeVotck4dqCKT/JY=",
@@ -601,6 +2009,13 @@
 			"path": "k8s.io/apimachinery/pkg/watch",
 			"revision": "103fd098999dc9c0c88536f5c9ad2e5da39373ae",
 			"revisionTime": "2018-06-21T03:03:51Z"
+		},
+		{
+			"checksumSHA1": "75XO1Co6JNjL12Ppnvf8DrH+77Y=",
+			"origin": "istio.io/istio/vendor/k8s.io/apimachinery/third_party/forked/golang/json",
+			"path": "k8s.io/apimachinery/third_party/forked/golang/json",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
 		},
 		{
 			"checksumSHA1": "9sFA+EjKrjpmK4OofQH0p0Rowfg=",
@@ -837,6 +2252,20 @@
 			"revisionTime": "2018-06-28T04:30:50Z"
 		},
 		{
+			"checksumSHA1": "S2owW5NssmU7I+gY6gKQbh1+Vdw=",
+			"origin": "istio.io/istio/vendor/k8s.io/client-go/plugin/pkg/client/auth/gcp",
+			"path": "k8s.io/client-go/plugin/pkg/client/auth/gcp",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "Il9ZfPfdHXDgvJo088pnEav9ZSc=",
+			"origin": "istio.io/istio/vendor/k8s.io/client-go/plugin/pkg/client/auth/oidc",
+			"path": "k8s.io/client-go/plugin/pkg/client/auth/oidc",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
 			"checksumSHA1": "WAtl5P1bup5IS4is2kEc5WBN3YU=",
 			"path": "k8s.io/client-go/rest",
 			"revision": "7d04d0e2a0a1a4d4a1cd6baa432a2301492e4e65",
@@ -849,10 +2278,24 @@
 			"revisionTime": "2018-06-28T04:30:50Z"
 		},
 		{
+			"checksumSHA1": "j3Th2B1Hpv6UFLMEmA0ZdbO4kGU=",
+			"origin": "istio.io/istio/vendor/k8s.io/client-go/third_party/forked/golang/template",
+			"path": "k8s.io/client-go/third_party/forked/golang/template",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
 			"checksumSHA1": "/QeKYX2M+m1OFCDyH9PHYp6w510=",
 			"path": "k8s.io/client-go/tools/auth",
 			"revision": "7d04d0e2a0a1a4d4a1cd6baa432a2301492e4e65",
 			"revisionTime": "2018-06-28T04:30:50Z"
+		},
+		{
+			"checksumSHA1": "g1J15yby0jVPvpVxn7VM3o5URZw=",
+			"origin": "istio.io/istio/vendor/k8s.io/client-go/tools/cache",
+			"path": "k8s.io/client-go/tools/cache",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
 		},
 		{
 			"checksumSHA1": "TCBw/2DobQ3JpcvXy0hW3IbNWb8=",
@@ -879,10 +2322,38 @@
 			"revisionTime": "2018-06-28T04:30:50Z"
 		},
 		{
+			"checksumSHA1": "TaGnv1Jskmc5Itx/03VwmSlJdr8=",
+			"origin": "istio.io/istio/vendor/k8s.io/client-go/tools/leaderelection",
+			"path": "k8s.io/client-go/tools/leaderelection",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "5sclUKx0CFDdQXrEgwBvL+XQhd4=",
+			"origin": "istio.io/istio/vendor/k8s.io/client-go/tools/leaderelection/resourcelock",
+			"path": "k8s.io/client-go/tools/leaderelection/resourcelock",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
 			"checksumSHA1": "rRC9GCWXfyIXKHBCeKpw7exVybE=",
 			"path": "k8s.io/client-go/tools/metrics",
 			"revision": "7d04d0e2a0a1a4d4a1cd6baa432a2301492e4e65",
 			"revisionTime": "2018-06-28T04:30:50Z"
+		},
+		{
+			"checksumSHA1": "ogOuc5U0p2hj3iprnOB201juXb4=",
+			"origin": "istio.io/istio/vendor/k8s.io/client-go/tools/pager",
+			"path": "k8s.io/client-go/tools/pager",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "5wdOQkW5IWVicrtOrcUCH+5zk2Y=",
+			"origin": "istio.io/istio/vendor/k8s.io/client-go/tools/record",
+			"path": "k8s.io/client-go/tools/record",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
 		},
 		{
 			"checksumSHA1": "n2h6CjJR1o+JM2snIIsCdcMMDWs=",
@@ -895,6 +2366,13 @@
 			"path": "k8s.io/client-go/transport",
 			"revision": "7d04d0e2a0a1a4d4a1cd6baa432a2301492e4e65",
 			"revisionTime": "2018-06-28T04:30:50Z"
+		},
+		{
+			"checksumSHA1": "lTGzV+HgAXM6vWKFfedFLlIl94E=",
+			"origin": "istio.io/istio/vendor/k8s.io/client-go/util/buffer",
+			"path": "k8s.io/client-go/util/buffer",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
 		},
 		{
 			"checksumSHA1": "rIxDMrsqcf1cjy3dgMaEZw/TvJs=",
@@ -925,7 +2403,98 @@
 			"path": "k8s.io/client-go/util/integer",
 			"revision": "7d04d0e2a0a1a4d4a1cd6baa432a2301492e4e65",
 			"revisionTime": "2018-06-28T04:30:50Z"
+		},
+		{
+			"checksumSHA1": "1+CyY2zkEQX4VrByn/77x6gWy78=",
+			"origin": "istio.io/istio/vendor/k8s.io/client-go/util/jsonpath",
+			"path": "k8s.io/client-go/util/jsonpath",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "rd59dncyakY+75KtF7VOt6Fe2Q8=",
+			"origin": "istio.io/istio/vendor/k8s.io/client-go/util/retry",
+			"path": "k8s.io/client-go/util/retry",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "zwhwT1ly2D9O4J83gN3vN+pd4Qs=",
+			"origin": "istio.io/istio/vendor/k8s.io/client-go/util/workqueue",
+			"path": "k8s.io/client-go/util/workqueue",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "YYWHet7z+ItSyWV2/jijTJJ+pKg=",
+			"origin": "istio.io/istio/vendor/k8s.io/cluster-registry/pkg/apis/clusterregistry/v1alpha1",
+			"path": "k8s.io/cluster-registry/pkg/apis/clusterregistry/v1alpha1",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "snaXWi9HBAVXp4zueCACdzPE0N4=",
+			"origin": "istio.io/istio/vendor/k8s.io/ingress/core/pkg/ingress/annotations/class",
+			"path": "k8s.io/ingress/core/pkg/ingress/annotations/class",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "jSMDn2qOCUisSkNlnPypW1BJ/EE=",
+			"origin": "istio.io/istio/vendor/k8s.io/ingress/core/pkg/ingress/annotations/parser",
+			"path": "k8s.io/ingress/core/pkg/ingress/annotations/parser",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "IA0bk1PerN78jPaRiELAnFoFZfw=",
+			"origin": "istio.io/istio/vendor/k8s.io/ingress/core/pkg/ingress/errors",
+			"path": "k8s.io/ingress/core/pkg/ingress/errors",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "uxovDv/ZZRMuX3Vd7NTE//GQkRg=",
+			"origin": "istio.io/istio/vendor/k8s.io/ingress/core/pkg/ingress/status",
+			"path": "k8s.io/ingress/core/pkg/ingress/status",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "fzVpGi5jYG7HDvYC5jx4KF4pyKM=",
+			"origin": "istio.io/istio/vendor/k8s.io/ingress/core/pkg/ingress/store",
+			"path": "k8s.io/ingress/core/pkg/ingress/store",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "XbLiVbrb+CSLSXXJbSONmO7SgnY=",
+			"origin": "istio.io/istio/vendor/k8s.io/ingress/core/pkg/k8s",
+			"path": "k8s.io/ingress/core/pkg/k8s",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "YJ49Njg/L5+3pZ6uvWLm6jK1Ayg=",
+			"origin": "istio.io/istio/vendor/k8s.io/ingress/core/pkg/strings",
+			"path": "k8s.io/ingress/core/pkg/strings",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "7cTjL/OHh76y7gk3qUD4Fc8mZD0=",
+			"origin": "istio.io/istio/vendor/k8s.io/ingress/core/pkg/task",
+			"path": "k8s.io/ingress/core/pkg/task",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
+		},
+		{
+			"checksumSHA1": "dRuB87bmmez7Ym0xaG27Lo1T1AE=",
+			"origin": "istio.io/istio/vendor/k8s.io/kube-openapi/pkg/util/proto",
+			"path": "k8s.io/kube-openapi/pkg/util/proto",
+			"revision": "d5cb99f479ad9da88eebb8bb3637b17c323bc50b",
+			"revisionTime": "2018-11-19T19:53:36Z"
 		}
 	],
-	"rootPath": "github.com/exiaohao/istio-deploy-test"
+	"rootPath": "github.com/exiaohao/deploy-test"
 }

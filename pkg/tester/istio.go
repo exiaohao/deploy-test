@@ -1,11 +1,11 @@
 package tester
 
 import (
-	"fmt"
 	"os"
 	"strings"
 
 	"github.com/exiaohao/deploy-test/pkg/base"
+	"github.com/exiaohao/deploy-test/pkg/util"
 	"github.com/golang/glog"
 	meta_v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/kubernetes"
@@ -13,6 +13,7 @@ import (
 
 type IstioTest struct {
 	kubeClient     *kubernetes.Clientset
+	KubeConfig     string
 	namespace      string
 	showDetail     bool
 	runFullTest    bool
@@ -24,6 +25,7 @@ type IstioTest struct {
 func (it *IstioTest) Initialize(opts InitOptions) {
 	var err error
 
+	it.KubeConfig = opts.KubeConfig
 	if it.kubeClient, err = base.InitializeKubeClient(opts.KubeConfig); err != nil {
 		glog.Fatalf("initialize kubeclient using %s: %v", opts.KubeConfig, err)
 	}
@@ -131,38 +133,11 @@ func (it *IstioTest) bookinfo() error {
 	}
 	defer base.RemoveNamespace(it.kubeClient, it.testNamespace, it.showDetail)
 
-	deployments := []string{
-		"deployment-detail-v1.yaml",
-		"deployment-productpage-v1.yaml",
-		"deployment-rating-v1.yaml",
-		"deployment-reviews-v1.yaml",
-		"deployment-reviews-v2.yaml",
-		"deployment-reviews-v3.yaml",
-	}
-	services := []string{
-		"service-detail.yaml",
-		"service-productpage.yaml",
-		"service-rating.yaml",
-		"service-reviews.yaml",
-	}
+	result, err := util.IstioKubeInject("test-data/bookinfo/bookinfo.yaml", it.KubeConfig)
+	glog.Infof("Result: %s, Err: %s", result, err)
 
-	for _, deployment := range deployments {
-		file := fmt.Sprintf("./test-data/bookinfo/%s", deployment)
-		if err := base.CreateDeployment(it.kubeClient, it.testNamespace, file, it.showDetail); err != nil {
-			return err
-		}
-	}
-
-	for _, service := range services {
-		file := fmt.Sprintf("./test-data/bookinfo/%s", service)
-		if _, err := base.CreateService(it.kubeClient, it.testNamespace, file, it.showDetail); err != nil {
-			return err
-		}
-	}
-
-	if err := base.WaitNamespacePodsReady(it.kubeClient, it.testNamespace, 5, 2); err != nil {
-		return err
-	}
+	// _, err = util.KubeApply(it.testNamespace, "test-data/bookinfo/bookinfo.yaml", it.KubeConfig)
+	// glog.Fatal(err)
 
 	return nil
 }
